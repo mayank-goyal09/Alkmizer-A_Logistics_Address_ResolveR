@@ -1,0 +1,27 @@
+Fair-Code Commercial License / Business Source License (BSL 1.1)
+
+Copyright (c) 2026 Mayank Goyal. All rights reserved.
+
+Licensor: Mayank Goyal (Owner & Creator of Alkmizer)
+Software: Alkmizer — AI-Powered Address Standardization & Logistics Verification Engine
+
+1. GRANT OF LICENSE:
+Licensor grants you a non-exclusive license to inspect, review, and use this Software for personal, non-commercial, educational, and evaluation purposes only.
+
+2. COMMERCIAL USE RESTRICTION:
+Any use of this Software in whole or in part for commercial, business, revenue-generating, or enterprise operational purposes is strictly prohibited unless an official Commercial Enterprise License is purchased directly from Mayank Goyal.
+
+Commercial use includes, but is not limited to:
+- Using the Software or its trained machine learning models to process customer/shipping addresses in an e-commerce, logistics, courier, or retail business.
+- Offering the Software as a paid API, hosted SaaS, or integrated service to third parties.
+- Reselling, redistributing, or sublicensing the Software or derived models.
+
+3. INTELLECTUAL PROPERTY:
+The trained Conditional Random Fields (CRF) models, feature extraction algorithms, and address verification matrices remain the exclusive intellectual property of Mayank Goyal.
+
+4. COMMERCIAL INQUIRIES & LICENSING:
+To obtain a commercial license, authorized enterprise account, or API key access, contact:
+Email: client@enterprise.com / Mayank Goyal
+Project: https://alkmizer.vercel.app
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
