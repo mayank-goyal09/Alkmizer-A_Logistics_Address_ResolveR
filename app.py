@@ -15,45 +15,11 @@ def load_model():
         return joblib.load(model_path)
     return None
 
-def get_word_at(sent, i):
-    start = i
-    while start > 0 and not sent[start-1].isspace():
-        start -= 1
-    end = i
-    while end < len(sent) and not sent[end].isspace():
-        end += 1
-    return "".join(sent[start:end]).lower().strip(',.')
+from features import extract_features
+from word_segmenter import WordSegmenter
 
-def char2features(sent, i):
-    char = sent[i]
-    word = get_word_at(sent, i)
-    
-    features = {
-        'bias': 1.0,
-        'char': char.lower(),
-        'char.isdigit()': char.isdigit(),
-        'char.isupper()': char.isupper(),
-        'char.ispunct()': not char.isalnum() and not char.isspace(),
-        'word_has_digit': any(c.isdigit() for c in word),
-        'word_is_short': len(word) <= 2,
-        'is_key_suffix': word in ['st', 'rd', 'road', 'ave', 'blvd', 'lane', 'street'],
-        'is_indian_trigger': word in ['plot', 'flat', 'nivas', 'opp', 'near', 'floor', 'h', 'no'],
-    }
-    
-    for offset in range(1, 4):
-        if i - offset >= 0:
-            features[f'-{offset}:char'] = sent[i-offset].lower()
-            features[f'-{offset}:digit'] = sent[i-offset].isdigit()
-        if i + offset < len(sent):
-            features[f'+{offset}:char'] = sent[i+offset].lower()
-            features[f'+{offset}:digit'] = sent[i+offset].isdigit()
+segmenter = WordSegmenter()
 
-    if i == 0: features['BOS'] = True
-    if i == len(sent)-1: features['EOS'] = True
-    return features
-
-def extract_features(tokens):
-    return [char2features(tokens, i) for i in range(len(tokens))]
 
 def resolve_address(raw_text, model):
     if not model: return {"Error": "Model not loaded"}
@@ -71,7 +37,7 @@ def resolve_address(raw_text, model):
                 result[label] = ""
             result[label] += char
             
-    final_output = {k: v.strip().replace('  ', ' ') for k, v in result.items()}
+    final_output = {k: segmenter.segment(v.strip().replace('  ', ' ')) for k, v in result.items()}
     return final_polish(final_output)
 
 def final_polish(structured_addr):
@@ -84,7 +50,7 @@ def final_polish(structured_addr):
 
 # --- UI CONFIG ---
 
-st.set_page_config(page_title="Logistics ResolveR", page_icon="📦", layout="wide")
+st.set_page_config(page_title="Alkmizer — A resolvaddresser", page_icon="📦", layout="wide")
 
 # Custom CSS for Orange/Black Glassmorphism
 st.markdown("""
