@@ -1,0 +1,22 @@
+# Environment variables & Supabase Secrets (NEVER push to GitHub)
+.env
+.env.local
+.env.*.local
+
+# Python Caches & Virtual Envs
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Scratch & System Logs
+scratch/
+.system_generated/
+*.log
+
+# OS Metadata
+.DS_Store
+Thumbs.db
