@@ -43,6 +43,7 @@ app = FastAPI(title="Global Address Resolver REST API")
 # Authorized Email Whitelist for Owner & Paying Enterprise Clients
 AUTHORIZED_EMAILS = {
     "mayank@owner.internal",
+    "itsmaygal09@gmail.com",
     "mayank@gmail.com",
     "client@enterprise.com",
     "admin@alkmizer.com",
