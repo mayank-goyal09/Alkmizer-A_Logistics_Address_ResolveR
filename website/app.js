@@ -182,10 +182,85 @@ function initRouteSimulator() {
 }
 
 /* ==========================================================================
-   4. ADDRESS PARSER ENGINE SIMULATOR
+   4. DEVICE-LEVEL 3-SCAN DEMO RATE LIMITER & PAYWALL ENGINE
    ========================================================================== */
-function parseAddress(rawText) {
+const MAX_FREE_DEMO_SCANS = 3;
+
+function getDemoScansCount() {
+  return parseInt(localStorage.getItem("alkmizer_demo_scans_used") || "0", 10);
+}
+
+function updateQuotaUI() {
+  const count = getDemoScansCount();
+  const remaining = Math.max(0, MAX_FREE_DEMO_SCANS - count);
+  const badge = document.getElementById("demoQuotaBadge");
+  const dot = document.getElementById("quotaDot");
+  const text = document.getElementById("quotaText");
+
+  if (!badge || !text) return;
+
+  if (remaining >= 3) {
+    badge.style.background = "rgba(16, 185, 129, 0.15)";
+    badge.style.borderColor = "rgba(16, 185, 129, 0.4)";
+    badge.style.color = "#34D399";
+    if (dot) dot.style.background = "#10B981";
+    text.textContent = "3 of 3 Free Demo Scans Left";
+  } else if (remaining === 2) {
+    badge.style.background = "rgba(59, 130, 246, 0.15)";
+    badge.style.borderColor = "rgba(59, 130, 246, 0.4)";
+    badge.style.color = "#60A5FA";
+    if (dot) dot.style.background = "#3B82F6";
+    text.textContent = "2 of 3 Free Demo Scans Left";
+  } else if (remaining === 1) {
+    badge.style.background = "rgba(245, 158, 11, 0.15)";
+    badge.style.borderColor = "rgba(245, 158, 11, 0.4)";
+    badge.style.color = "#FBBF24";
+    if (dot) dot.style.background = "#F59E0B";
+    text.textContent = "1 Free Demo Scan Left";
+  } else {
+    badge.style.background = "rgba(239, 68, 68, 0.15)";
+    badge.style.borderColor = "rgba(239, 68, 68, 0.4)";
+    badge.style.color = "#F87171";
+    if (dot) dot.style.background = "#EF4444";
+    text.textContent = "🔒 0 of 3 Demo Scans (Limit Reached)";
+  }
+}
+
+function openPaywallModal() {
+  const modal = document.getElementById("paywallModal");
+  if (modal) modal.style.display = "flex";
+}
+
+function closePaywallModal() {
+  const modal = document.getElementById("paywallModal");
+  if (modal) modal.style.display = "none";
+}
+
+let lastParsedInput = "";
+let isCurrentPreset = true;
+
+function parseAddress(rawText, isPreset = false) {
   const startTime = performance.now();
+  if (!rawText || !rawText.trim()) {
+    return {
+      tokens: [],
+      components: { number: "—", street: "—", landmark: "—", city: "—", state: "—", pincode: "—" },
+      stats: { latency: "0.0 ms", confidence: "0.0%", tokenCount: 0 }
+    };
+  }
+
+  // Check if custom input and demo limit reached
+  if (!isPreset && rawText.trim() !== lastParsedInput.trim()) {
+    const currentScans = getDemoScansCount();
+    if (currentScans >= MAX_FREE_DEMO_SCANS) {
+      openPaywallModal();
+      return null;
+    }
+    // Increment demo scan count
+    localStorage.setItem("alkmizer_demo_scans_used", (currentScans + 1).toString());
+    updateQuotaUI();
+    lastParsedInput = rawText.trim();
+  }
   if (!rawText || !rawText.trim()) {
     return {
       tokens: [],
@@ -333,14 +408,18 @@ function renderResults(result) {
       },
       raw_tokens: result.tokens
     };
+    jsonOutput["api_key"] = "alk_live_•••••••••••••••• (Requires Paid Enterprise License)";
     codePreview.textContent = JSON.stringify(jsonOutput, null, 2);
   }
 }
 
 function handleInputChange() {
   if (!addressInput) return;
-  const result = parseAddress(addressInput.value);
-  renderResults(result);
+  const isPreset = Object.values(PRESETS).some(p => p.trim() === addressInput.value.trim());
+  const result = parseAddress(addressInput.value, isPreset);
+  if (result) {
+    renderResults(result);
+  }
 }
 
 function showToast(msg = "Copied to clipboard!") {
@@ -425,6 +504,7 @@ function updateCalculator() {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
+  updateQuotaUI();
   initKineticTypography();
   initTransformerSlider();
   initRouteSimulator();

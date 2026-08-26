@@ -292,15 +292,21 @@
       </div>
 
       <div class="parser-card glass-card">
-        <div class="parser-presets">
-          <span class="preset-label">Quick Scenarios:</span>
-          <button class="preset-chip active" data-preset="indian_messy">🇮🇳 Messy Indian (No Punctuation)</button>
-          <button class="preset-chip" data-preset="landmark_typo">📍 Landmark + Typos</button>
-          <button class="preset-chip" data-preset="ecommerce_note">🛍️ E-Commerce Note</button>
-          <button class="preset-chip" data-preset="global_standard">🌍 US / Global Format</button>
+        <div class="parser-presets" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+          <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="preset-label">Quick Scenarios:</span>
+            <button class="preset-chip active" data-preset="indian_messy">🇮🇳 Messy Indian (No Punctuation)</button>
+            <button class="preset-chip" data-preset="landmark_typo">📍 Landmark + Typos</button>
+            <button class="preset-chip" data-preset="ecommerce_note">🛍️ E-Commerce Note</button>
+            <button class="preset-chip" data-preset="global_standard">🌍 US / Global Format</button>
+          </div>
+          <div id="demoQuotaBadge" class="quota-badge quota-green" style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.35rem 0.85rem; border-radius: 9999px; font-size: 0.78rem; font-weight: 700; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.4); color: #34D399;">
+            <span id="quotaDot" style="width: 7px; height: 7px; border-radius: 50%; background: #10B981;"></span>
+            <span id="quotaText">3 of 3 Free Demo Scans</span>
+          </div>
         </div>
 
-        <div class="input-box-wrapper">
+        <div class="input-box-wrapper" style="position: relative;">
           <textarea 
             id="addressInput" 
             class="address-input" 
@@ -384,9 +390,10 @@
 
           <div class="results-panel">
             <div class="panel-header">
-              <span class="panel-title">
+              <span class="panel-title" style="display: flex; align-items: center; gap: 0.5rem;">
                 <i data-lucide="code" style="width: 18px; height: 18px; color: var(--accent-purple);"></i>
                 <span>REST API JSON Payload</span>
+                <span style="font-size: 0.7rem; font-weight: 700; background: rgba(249, 115, 22, 0.15); border: 1px solid rgba(249, 115, 22, 0.4); color: #FB923C; padding: 2px 8px; border-radius: 9999px;">🔒 Production API Key Required</span>
               </span>
               <span style="font-size: 0.75rem; color: var(--accent-emerald); background: rgba(16, 185, 129, 0.1); padding: 0.15rem 0.5rem; border-radius: 0.3rem;">200 OK</span>
             </div>
@@ -699,5 +706,50 @@
   <script>
     lucide.createIcons();
   </script>
+
+  <!-- Production Paywall & Enterprise License Modal -->
+  <div id="paywallModal" style="display: none; position: fixed; inset: 0; background: rgba(3, 7, 18, 0.85); backdrop-filter: blur(14px); z-index: 99999; align-items: center; justify-content: center; padding: 1.5rem;">
+    <div style="background: rgba(15, 23, 42, 0.95); border: 1px solid rgba(249, 115, 22, 0.35); box-shadow: 0 25px 70px -15px rgba(249, 115, 22, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1); border-radius: 1.5rem; max-width: 520px; width: 100%; padding: 2.25rem; position: relative; color: white; text-align: center;">
+      <button onclick="closePaywallModal()" style="position: absolute; top: 1.25rem; right: 1.25rem; background: none; border: none; font-size: 1.5rem; color: #94A3B8; cursor: pointer; line-height: 1;">&times;</button>
+      
+      <div style="width: 56px; height: 56px; background: rgba(249, 115, 22, 0.15); border: 1px solid rgba(249, 115, 22, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; color: #F97316; font-size: 1.75rem;">
+        🚀
+      </div>
+
+      <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; letter-spacing: -0.02em;">
+        Ready for Production Fleets?
+      </h3>
+
+      <p style="font-size: 0.92rem; color: #94A3B8; line-height: 1.6; margin-bottom: 1.5rem;">
+        You've experienced the speed and F1 accuracy of the <strong style="color: #F8FAFC;">Alkmizer AI Engine</strong>. To process unlimited live addresses and deploy to your warehouse or e-commerce checkout:
+      </p>
+
+      <div style="background: rgba(9, 13, 22, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 0.85rem; padding: 1.15rem; text-align: left; margin-bottom: 1.75rem; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.88rem;">
+        <div style="display: flex; align-items: center; gap: 0.5rem; color: #34D399;">
+          <span>✓</span> <strong style="color: #F1F5F9;">Unlimited Address Resolution</strong> (Zero rate limits)
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem; color: #34D399;">
+          <span>✓</span> <strong style="color: #F1F5F9;">High-Throughput REST API Key</strong> (Sub-8ms latency)
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem; color: #34D399;">
+          <span>✓</span> <strong style="color: #F1F5F9;">19,000+ Verified Postal Directory</strong> (Eliminate RTO returns)
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem; color: #34D399;">
+          <span>✓</span> <strong style="color: #F1F5F9;">Commercial Enterprise License</strong>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <a href="#pricing" onclick="closePaywallModal()" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.85rem; font-size: 0.95rem;">
+          <span>View Enterprise Pricing</span>
+          <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+        </a>
+        <a href="https://github.com/mayank-goyal09/Logistics-Address-Alkmizer" target="_blank" class="btn btn-secondary" style="width: 100%; justify-content: center; padding: 0.85rem; font-size: 0.95rem;">
+          <span>Contact Mayank for Custom License</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
