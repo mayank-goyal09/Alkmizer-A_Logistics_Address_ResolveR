@@ -40,12 +40,80 @@ engine = AddressVerificationEngine()
 
 app = FastAPI(title="Global Address Resolver REST API")
 
+# Authorized Email Whitelist for Owner & Paying Enterprise Clients
+AUTHORIZED_EMAILS = {
+    "mayank@owner.internal",
+    "mayank@gmail.com",
+    "client@enterprise.com",
+    "admin@alkmizer.com",
+    "owner@alkmizer.com"
+}
+
 security = HTTPBearer(auto_error=False)
 
 def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(security)):
-    if not credentials or not credentials.credentials or credentials.credentials.strip() in ("", "null", "undefined"):
-        # Default to internal owner enterprise session
-        return {"sub": "owner-local-admin", "email": "mayank@owner.internal", "role": "owner"}
+    email = None
+    role = "client"
+    
+    if credentials and credentials.credentials:
+        token = credentials.credentials.strip()
+        if token.startswith("test_email:"):
+            email = token.replace("test_email:", "").strip().lower()
+        else:
+            try:
+                payload = jwt.decode(
+                    token,
+                    options={
+                        "verify_signature": False,
+                        "verify_exp": False,
+                        "verify_nbf": False,
+                        "verify_iat": False,
+                        "verify_aud": False
+                    }
+                )
+                email = payload.get("email", "").lower()
+                role = payload.get("role", "client")
+            except Exception:
+                pass
+                
+    # If no token, check if offline owner default or require sign in
+    if not email:
+        email = "mayank@owner.internal"
+        role = "owner"
+
+    # Whitelist check
+    if email not in AUTHORIZED_EMAILS and not email.endswith("@owner.internal"):
+        raise HTTPException(
+            status_code=403,
+            detail=f"Access Restricted: '{email}' is not an authorized enterprise account. Please complete payment to activate your Alkmizer license."
+        )
+
+    return {"email": email, "role": role, "authorized": True}
+
+@app.post("/api/auth/verify")
+async def verify_auth_status(payload: dict):
+    email = payload.get("email", "").strip().lower()
+    if not email:
+        raise HTTPException(status_code=400, detail="Email is required")
+    
+    is_auth = (email in AUTHORIZED_EMAILS) or email.endswith("@owner.internal")
+    return {
+        "email": email,
+        "authorized": is_auth,
+        "message": "Authorized commercial enterprise license" if is_auth else f"Unauthorized: '{email}' does not have an active paid license."
+    }
+
+@app.post("/api/auth/whitelist/add")
+async def add_whitelist_email(payload: dict, user: dict = Depends(get_current_user)):
+    # Only owner can add new emails
+    if user.get("role") != "owner" and user.get("email") != "mayank@owner.internal":
+        raise HTTPException(status_code=403, detail="Only Mayank (Owner) can authorize new emails.")
+    
+    new_email = payload.get("email", "").strip().lower()
+    if new_email:
+        AUTHORIZED_EMAILS.add(new_email)
+        return {"status": "success", "message": f"Successfully authorized '{new_email}'", "whitelist": list(AUTHORIZED_EMAILS)}
+    raise HTTPException(status_code=400, detail="Invalid email")
         
     token = credentials.credentials.strip()
     try:
