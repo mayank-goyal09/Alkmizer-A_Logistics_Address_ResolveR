@@ -652,35 +652,31 @@
 
         <div class="nav-right-cluster" id="navRightCluster">
             <!-- License Pill -->
-            <div class="license-pill" id="navLicensePill">
+            <div class="license-pill" id="navLicensePill" style="border-color: rgba(203, 213, 225, 0.9); color: #64748B;">
                 <i data-lucide="shield-check" style="width: 14px; height: 14px;"></i>
-                <span id="navLicenseText">Commercial License</span>
+                <span id="navLicenseText">Auth Required</span>
             </div>
 
-            <!-- User Auth Dropdown Menu -->
-            <button class="user-menu-btn" id="userMenuBtn" onclick="toggleUserDropdown(event)">
-                <span id="navUserDot" style="width: 8px; height: 8px; border-radius: 50%; background: #10B981;"></span>
-                <span id="navUserEmail">Mayank (owner)</span>
-                <i data-lucide="chevron-down" style="width: 14px; height: 14px; color: var(--text-faint);"></i>
+            <!-- User Auth / Sign In Button -->
+            <button class="user-menu-btn" id="userMenuBtn" onclick="handleUserBtnClick(event)">
+                <span id="navUserDot" style="width: 8px; height: 8px; border-radius: 50%; background: #64748B;"></span>
+                <span id="navUserEmail" style="font-weight: 700;">Sign In</span>
+                <i data-lucide="chevron-down" id="navUserChevron" style="width: 14px; height: 14px; color: var(--text-faint); display: none;"></i>
             </button>
 
             <!-- User Dropdown Popup Card -->
-            <div class="user-dropdown-menu" id="userDropdownMenu">
+            <div class="user-dropdown-menu" id="userDropdownMenu" style="display: none;">
                 <div class="user-dropdown-header">
-                    <div class="user-dropdown-name" id="dropdownUserName">Mayank Goyal</div>
-                    <div class="user-dropdown-email" id="dropdownUserEmail">mayank@owner.internal</div>
+                    <div class="user-dropdown-name" id="dropdownUserName">Enterprise User</div>
+                    <div class="user-dropdown-email" id="dropdownUserEmail">user@company.com</div>
                 </div>
                 <div id="dropdownLicenseBadge" style="font-size: 0.75rem; color: #047857; background: #ECFDF5; padding: 6px 10px; border-radius: 6px; font-weight: 700;">
                     🛡️ Commercial Enterprise License Active
                 </div>
-                <div style="font-size: 0.75rem; color: var(--text-muted);">
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;">
                     ⚡ Engine: <strong>Local CPU Node</strong> (0ms Overhead)
                 </div>
                 <hr style="border: none; border-top: 1px solid #EEF2F6;">
-                <button class="dropdown-item-btn" onclick="openAuthModal()">
-                    <i data-lucide="users" style="width: 14px; height: 14px;"></i>
-                    <span>Switch User / Test Email</span>
-                </button>
                 <button class="dropdown-item-btn" onclick="copyAPIKey()">
                     <i data-lucide="key" style="width: 14px; height: 14px;"></i>
                     <span>Copy API Secret Key</span>
