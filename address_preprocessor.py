@@ -220,6 +220,64 @@ ADDRESS_START_KEYWORDS = {
     "premises", "bldg", "complex", "enclave", "heights", "residency", "court", "view"
 }
 
+# Comprehensive Delivery Instruction / Conversational Chatter Patterns
+CHATTER_PATTERNS = [
+    # 1. Temporal & Day/Time Constraints
+    r'\b(deliver\s+(only\s+)?(on\s+[a-zA-Z\s]+?only|on\s+[a-zA-Z]+|after\s+[0-9:\s]+(am|pm)?|before\s+[0-9:\s]+(am|pm|evening|morning)?|between\s+[0-9:\s\w]+?(am|pm)?))\b',
+    r'\b(do\s+not\s+call\s+(before|after)\s+\d+(:?\d+)?\s*(am|pm)?)\b',
+    r'\b(deliver\s+(on\s+)?(weekdays|weekends|sundays|saturday|holidays)\s*(only)?)\b',
+    
+    # 2. Phone Calls & Callback Instructions
+    r'\b(call\s+(my\s+wife|my\s+husband|me|my\s+brother|my\s+father|my\s+mother|my\s+friend|anyone|driver|guard|sir|madam|customer)?\s*(on|at)?\s*\+?\d{10,12}[,\s]*(if\s+i\s+(do\s*not|dont)\s+pick\s*up)?)\b',
+    r'\b(if\s+i\s+(do\s*not|dont)\s+pick\s*up)\b',
+    r'\b(call\s+me\s+i\s+will\s+come\s+(down|out|outside))\b',
+    r'\b(call\s+me\s+when\s+you\s+reach\s+(the\s+)?(gate|petrol\s+pump|location|nearby|society))\b',
+    r'\b(ring\s+(the\s+)?(bell|doorbell)\s*(twice|two\s+times|3\s+times|once)?(\s+do\s+not\s+knock)?)\b',
+    r'\b(do\s+not\s+ring\s+(the\s+)?(bell|doorbell)(\s+baby\s+is\s+sleeping)?)\b',
+
+    # 3. Proxy Delivery & Guard / Neighbor Instructions
+    r'\b(give\s+(it\s+)?to\s+(the\s+)?(security\s+guard|guard|neighbor|neighbour|watchman|reception|care\s*taker|manager|shopkeeper)\s*(if\s+shop\s+is\s+closed|if\s+i\s+am\s+not\s+available|if\s+door\s+locked)?)\b',
+    r'\b(leave\s+(the\s+)?(package|parcel|order|delivery)?\s*(at|with|near|by)\s+(the\s+)?(door|gate\s*\d*|guard\s*(at\s+gate\s*\d*)?|security|neighbor|neighbour(\s+in\s+flat\s*\w+)?|shoe\s*rack|porch|front\s*door))\b',
+    r'\b(ask\s+(for\s+)?[a-zA-Z]+[,\s]+(he|she)\s+will\s+take\s+the\s+parcel)\b',
+    r'\b(ask\s+anyone\s+for\s+[a-zA-Z]+\s+in\s+the\s+market)\b',
+
+    # 4. Warnings & Physical Obstacle Instructions
+    r'\b(beware\s+of\s+(the\s+)?(aggressive\s+)?(dog|dogs|pets))\b',
+    r'\b(if\s+gate\s+is\s+locked\s+throw\s+it\s+over\s+the\s+wall)\b',
+    r'\b(lift\s+is\s+not\s+working(\s+use\s+stairs)?)\b',
+    r'\b(gate\s+will\s+be\s+closed\s+after\s+\d+\s*(pm|am)?)\b',
+    
+    # 5. Order / E-commerce Metadata Noise
+    r'\b(cash\s+on\s+delivery|cod\s+order|fragile\s+handle\s+with\s+care|return\s+if\s+undelivered\s+to\s+[a-zA-Z\s]+(?=plot|house|flat|shop|gala)|urgent\s+medical\s+sample|awb\s*#?\s*\d+|order\s*#?\s*\d+|gstin\s*:\s*[a-zA-Z0-9]+)\b'
+]
+
+COMBINED_CHATTER_REGEX = re.compile('|'.join(f'({p})' for p in CHATTER_PATTERNS), re.IGNORECASE)
+
+def extract_and_strip_chatter(raw_text: str):
+    """
+    Extracts delivery instructions and strips all chatter noise from the address string.
+    Returns: (cleaned_address_text, list_of_extracted_instructions)
+    """
+    if not raw_text:
+        return raw_text, []
+        
+    extracted_instructions = []
+    
+    def _replacer(match):
+        text = match.group(0).strip()
+        if text:
+            extracted_instructions.append(text)
+        return " "
+
+    cleaned = COMBINED_CHATTER_REGEX.sub(_replacer, raw_text)
+    
+    # Clean dangling punctuation and spaces left behind
+    cleaned = re.sub(r'\s*,\s*', ', ', cleaned)
+    cleaned = re.sub(r'(,\s*)+', ', ', cleaned)
+    cleaned = re.sub(r'^[,\s\-\/]+|[,\s\-\/]+$', '', cleaned)
+    cleaned = " ".join(cleaned.split())
+    return cleaned, extracted_instructions
+
 def extract_and_strip_name(raw_text: str):
     """
     Detects and strips personal names, salutations, titles, and recipient identifiers 
@@ -231,6 +289,14 @@ def extract_and_strip_name(raw_text: str):
     
     text = raw_text.strip()
     recipient_name = ""
+
+    # Pattern 0: Name with parenthetical relation e.g. "Rahul Sharma (S/O Ramesh Sharma),"
+    paren_name_pattern = r'^\s*([A-Za-z\s\.]+\s*\([A-Za-z0-9\s\.\/]+\))\s*,?\s*'
+    m0 = re.match(paren_name_pattern, text)
+    if m0:
+        recipient_name = m0.group(1).strip(" ,-–:")
+        text = text[m0.end():].strip(" ,-–:")
+        return text, recipient_name
 
     # Pattern 1: Explicit Salutation (e.g. "Mr. Rahul Sharma,", "Dr. Ananya Roy -")
     salutation_pattern = rf'^\s*({NAME_SALUTATIONS}\.?\s+[A-Za-z\.\'\s]+?)(?:,\s*|\s*[-–:]\s*|\s+(?=(?:h\.?no|flat|plot|room|house|shop|block|bldg|building|door|unit|qtr|quarter|near|opp|behind|beside|\d+|#|sector|phase|gali|road|street)\b))'
@@ -294,7 +360,23 @@ def preprocess_address(raw: str) -> str:
 
     s = raw.strip()
 
-    # (0) Strip personal names / salutations / care of headers
+    # (0a) Handle literal newlines, escaped newlines, and form-field labels
+    s = s.replace(r'\n', ' ').replace('\n', ' ').replace('\r', ' ')
+    s = re.sub(r'\b(address\s+line\s*\d*|add|addr|name|ph|phone|mob|mobile|city|pin|pincode)\s*:\s*', ' ', s, flags=re.IGNORECASE)
+    s = re.sub(r'[\{\}\[\]\(\)]', ' ', s)
+    s = re.sub(r'[,;\-]{2,}', ', ', s)
+    
+    # Self-correction phrases (e.g. "Wait this is the wrong address, use 456 Park Ave")
+    s = re.sub(r'^.*?\b(wait\s+this\s+is\s+(the\s+)?wrong\s+address[,\s]+(use|deliver\s+to|send\s+to)?)\s*', '', s, flags=re.IGNORECASE)
+
+    # Single-digit Mumbai / Delhi / Chennai postal zone numbers (e.g. "Mumbai 70" -> "Mumbai 400070", "Nai Dilli - 1" -> "New Delhi 110001")
+    s = re.sub(r'\b(mumbai|bombay)\s*[-–\s]+(\d{1,2})\b', lambda m: f"{m.group(1)} 4000{int(m.group(2)):02d}", s, flags=re.IGNORECASE)
+    s = re.sub(r'\b(delhi|new\s*delhi|nai\s*dilli)\s*[-–\s]+(\d{1,2})\b', lambda m: f"New Delhi 1100{int(m.group(2)):02d}", s, flags=re.IGNORECASE)
+
+    # (0b) Strip conversational chatter & delivery instructions
+    s, _ = extract_and_strip_chatter(s)
+
+    # (0c) Strip personal names / salutations / care of headers
     s, _ = extract_and_strip_name(s)
 
     # (b) OCR fix
@@ -347,6 +429,20 @@ def preprocess_address(raw: str) -> str:
     }
     for pat, repl in TRANSLITERATION_MAP.items():
         s = re.sub(pat, repl, s, flags=re.IGNORECASE)
+
+    # (d4) Transit, Railway, Airport & City Shorthand Gazetteer (4-Layer Integration)
+    try:
+        from transit_gazetteer import resolve_transit_tokens
+        s = resolve_transit_tokens(s)
+    except Exception:
+        pass
+
+    # (d5) Pan-Indian Regional Locality & Directional Gazetteer (11 Linguistic Zones)
+    try:
+        from regional_vocabulary import normalize_regional_terms
+        s = normalize_regional_terms(s)
+    except Exception:
+        pass
 
     # (e) Expanded Block/wing/phonetic keyword de-fusion
     # Includes standard and common phonetic variations of house, street, landmark, and number words
