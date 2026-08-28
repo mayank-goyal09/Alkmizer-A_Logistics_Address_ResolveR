@@ -1325,7 +1325,12 @@
         async function handleGoogleSignIn() {
             try {
                 if (!sbClient) throw new Error("Supabase not initialized");
-                await sbClient.auth.signInWithOAuth({ provider: 'google' });
+                await sbClient.auth.signInWithOAuth({
+                    provider: 'google',
+                    options: {
+                        redirectTo: window.location.origin
+                    }
+                });
             } catch (e) {
                 alert("Google Auth: " + e.message);
             }
