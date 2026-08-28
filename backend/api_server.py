@@ -47,7 +47,9 @@ AUTHORIZED_EMAILS = {
     "mayank@gmail.com",
     "client@enterprise.com",
     "admin@alkmizer.com",
-    "owner@alkmizer.com"
+    "owner@alkmizer.com",
+    "test_authorized@delhivery.com",
+    "vip_client@shopify.com"
 }
 
 security = HTTPBearer(auto_error=False)
