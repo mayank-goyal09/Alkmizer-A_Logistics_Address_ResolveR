@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📦 Logistics ResolveR — Unstructured Address Parser 📦
+# 📦 Logistics ResolveR — Unstructured Address Parser
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=32&duration=3500&pause=1000&color=FF7800&center=true&vCenter=true&width=900&height=100&lines=Intelligent+Address+Structuring+🛰️;Messy+Data+→+Standardized+APIs;CRF+Sequence+Modeling+%7C+91.59%25+Accuracy)](https://git.io/typing-svg)
 
@@ -217,7 +217,7 @@ streamlit run app.py
 
 [![GitHub](https://img.shields.io/badge/GitHub-mayank--goyal09-181717?style=for-the-badge&logo=github)](https://github.com/mayank-goyal09)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Mayank_Goyal-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/mayank-goyal-4b8756363/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Site-4facfe?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mayank-goyal09.github.io/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Site-4facfe?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mayank-portfolio-delta.vercel.app/)
 
 <br/>
 
@@ -243,4 +243,3 @@ Give a ⭐️ if this project helped you understand address parsing and sequence
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:FF7800,100:FF3D00&height=120&section=footer)
 
 </div>
-
