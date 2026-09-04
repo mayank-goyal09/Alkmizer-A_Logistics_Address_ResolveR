@@ -187,7 +187,11 @@ def resolve_transit_tokens(text: str) -> str:
             info = RAILWAY_STATION_CODES[clean_t]
             expanded_tokens.append(info["canonical"])
         elif clean_t in CITY_SHORTHAND_GAZETTEER:
-            expanded_tokens.append(CITY_SHORTHAND_GAZETTEER[clean_t])
+            from transit_roads_gazetteer import is_city_word_in_road_context
+            if is_city_word_in_road_context(s, clean_t):
+                expanded_tokens.append(t)
+            else:
+                expanded_tokens.append(CITY_SHORTHAND_GAZETTEER[clean_t])
         else:
             expanded_tokens.append(t)
 
