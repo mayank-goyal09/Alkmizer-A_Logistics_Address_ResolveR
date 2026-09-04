@@ -51,7 +51,10 @@ def generate_clean_address():
         [('P', zipcode), ('O', ' '), ('S', street), ('O', ' '), ('C', city)],
         
         # Simple string: Number Street City Zip
-        [('N', b_num), ('O', ' '), ('S', street), ('O', ' '), ('C', city), ('O', ' '), ('P', zipcode)]
+        [('N', b_num), ('O', ' '), ('S', street), ('O', ' '), ('C', city), ('O', ' '), ('P', zipcode)],
+        
+        # Simple: Number City Zip (no street name)
+        [('N', b_num), ('O', ', '), ('C', city), ('O', ' '), ('P', zipcode)]
     ]
     
     chosen_format = random.choice(formats)
@@ -82,6 +85,7 @@ def apply_perturbations(components):
     - Transposition: swaps two adjacent characters.
     - Keyboard Proximity: swaps a char with a neighboring key.
     """
+    is_spaceless = random.random() < 0.35
     result = []
     i = 0
     while i < len(components):
@@ -89,8 +93,8 @@ def apply_perturbations(components):
         
         error_chance = random.random()
         
-        # 1. Merge (Delete a space: ~15% chance for any space) -> e.g., 123 Main St -> 123MainSt
-        if char == ' ' and error_chance < 0.15:
+        # 1. Merge (Delete a space/comma: ~15% chance, or 100% if is_spaceless) -> e.g., 123 Main St -> 123MainSt
+        if (char == ' ' or char == ',') and (is_spaceless or error_chance < 0.15):
             i += 1
             continue
             
@@ -149,8 +153,8 @@ def create_dataset(num_samples=1000):
     return df
 
 if __name__ == "__main__":
-    # Generate 100,000 rows for the final dataset
-    num_rows = 100000 
+    # Generate 40,000 rows for the final dataset
+    num_rows = 40000 
     print(f"Starting Generation of {num_rows} messy addresses...")
     
     df = create_dataset(num_samples=num_rows)
