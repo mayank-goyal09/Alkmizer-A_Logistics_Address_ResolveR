@@ -298,8 +298,27 @@ def resolve_components(chars, labels):
             if word_clean in DIRECTION_KEYWORDS and refined_labels[i] == 'C':
                 refined_labels[i] = 'S'
                 
-            # State names can never be City
-            if word_clean in INVALID_CITY_WORDS and refined_labels[i] == 'C':
+            # Locality indicator words are Street/Locality ('S'), NEVER City or State
+            LOCALITY_INDICATOR_WORDS = {
+                "nagar", "colony", "layout", "enclave", "bazaar", "bazar", "society", "vihar", 
+                "puram", "pete", "pet", "road", "street", "lane", "marg", "market", "sector", "phase"
+            }
+            if word_clean in LOCALITY_INDICATOR_WORDS:
+                refined_labels[i] = 'S'
+                
+            # If next word is a locality suffix (e.g. 'vaishali' in 'vaishali nagar'), current word is 'S', NOT 'C'
+            if w_idx + 1 < len(words):
+                next_word = words[w_idx + 1].lower().strip(".,-;")
+                if next_word in LOCALITY_INDICATOR_WORDS and refined_labels[i] == 'C':
+                    refined_labels[i] = 'S'
+                    
+            REAL_INDIAN_STATES = {
+                "andhra", "arunachal", "assam", "bihar", "chhattisgarh", "goa", "gujarat", "haryana", 
+                "himachal", "jharkhand", "karnataka", "kerala", "maharashtra", "manipur", "meghalaya", 
+                "mizoram", "nagaland", "odisha", "punjab", "rajasthan", "sikkim", "telangana", "tripura", 
+                "uttarakhand", "delhi"
+            }
+            if word_clean in REAL_INDIAN_STATES and refined_labels[i] == 'C':
                 refined_labels[i] = 'A'
 
     # House Number ('N') Contiguity Enforcement
