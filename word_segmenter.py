@@ -77,6 +77,12 @@ class WordSegmenter:
     def _segment_alnum(self, s):
         s_lower = s.lower()
         L = len(s_lower)
+        if L <= 4:
+            return s
+        if s_lower in self.words:
+            return s
+        if s_lower.endswith('s') and s_lower[:-1] in self.words:
+            return s
         if L == 0:
             return ""
             
