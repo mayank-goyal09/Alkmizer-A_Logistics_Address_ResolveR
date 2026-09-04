@@ -209,11 +209,17 @@ class AliasResolver:
         words = q_clean.split()
         q_unspaced = q_clean.replace(" ", "")
         
+        from transit_roads_gazetteer import is_city_word_in_road_context
+        
         # Sort by key length descending
         sorted_keys = sorted(self.aliases.keys(), key=len, reverse=True)
         for alias_key in sorted_keys:
             canonical_name, entity_type = self.aliases[alias_key]
             if entity_type in ("district", "city"):
+                # If this city word appears as part of an arterial road compound (e.g. 'Old Madras Road', 'Delhi Highway'),
+                # do NOT treat it as the destination city!
+                if is_city_word_in_road_context(query, alias_key):
+                    continue
                 key_clean = alias_key.lower().replace(" ", "")
                 if key_clean in words or key_clean in q_unspaced:
                     return canonical_name, entity_type
@@ -410,6 +416,9 @@ class IndiaPincodeVerifier(AddressVerifier):
     def _normalize_pincode(self, pin_str: str) -> str:
         if not pin_str:
             return ""
+        # If the string contains NO digits at all, it is an alphabetic word, NOT an OCR PIN!
+        if not any(c.isdigit() for c in pin_str):
+            return ""
         s = pin_str.lower().strip()
         replacements = {
             'o': '0', 'p': '0', 'q': '0',
@@ -444,10 +453,13 @@ class IndiaPincodeVerifier(AddressVerifier):
         if digits_6_nobound:
             return digits_6_nobound[-1]
 
-        # 3. Search for any sequence of 6 characters that resolve to a 6-digit PIN (with typos)
+        # 3. Search for any token that already has at least 3 digits (with OCR character typos)
         tokens = re.split(r'[\s,;\-]+', full_text)
         for token in reversed(tokens):
             if not token:
+                continue
+            # Require at least 3 digits in the token before attempting OCR letter conversion
+            if sum(c.isdigit() for c in token) < 3:
                 continue
             cleaned_token = self._normalize_pincode(token)
             if len(cleaned_token) == 6 and cleaned_token[0] != '0':
@@ -455,11 +467,12 @@ class IndiaPincodeVerifier(AddressVerifier):
             # If the token is longer but ends with a 6-digit-like pattern (e.g. "tamilnadu600029")
             if len(token) >= 6:
                 last_6 = token[-6:]
-                cleaned_last_6 = self._normalize_pincode(last_6)
-                if len(cleaned_last_6) == 6 and cleaned_last_6[0] != '0':
-                    return cleaned_last_6
+                if sum(c.isdigit() for c in last_6) >= 3:
+                    cleaned_last_6 = self._normalize_pincode(last_6)
+                    if len(cleaned_last_6) == 6 and cleaned_last_6[0] != '0':
+                        return cleaned_last_6
 
-        # Fallback to the parsed pin cleaned
+        # Fallback to the parsed pin cleaned only if it contains digits
         return self._normalize_pincode(parsed_pin)
 
     def normalize_city(self, city_str: str) -> str:
@@ -693,6 +706,122 @@ class IndiaPincodeVerifier(AddressVerifier):
                         
         return resolved
 
+    def _check_geographic_anchor(self, raw_query: str, raw_prediction: dict, conn: sqlite3.Connection):
+        """
+        Step 1: Check for City / State / PIN anchor anywhere in the input.
+        Returns (has_anchor: bool, anchor_details: dict)
+        """
+        import re
+        # 1. PIN code anchor (6-digit starting with 1-9)
+        pin_m = re.search(r'\b([1-9]\d{5})\b', raw_query)
+        if pin_m:
+            return True, {"type": "pincode", "val": pin_m.group(1)}
+        pred_pin = raw_prediction.get("postal_code", "").strip()
+        if pred_pin and len(pred_pin) == 6 and pred_pin.isdigit() and not pred_pin.startswith("0"):
+            return True, {"type": "pincode", "val": pred_pin}
+            
+        q_lower = raw_query.lower().replace(".", " ").replace(",", " ")
+        
+        # 2. State anchor
+        KNOWN_INDIAN_STATES = {
+            "andhra pradesh", "arunachal pradesh", "assam", "bihar", "chhattisgarh", "goa",
+            "gujarat", "haryana", "himachal pradesh", "jharkhand", "karnataka", "kerala",
+            "madhya pradesh", "maharashtra", "manipur", "meghalaya", "mizoram", "nagaland",
+            "odisha", "punjab", "rajasthan", "sikkim", "tamil nadu", "telangana", "tripura",
+            "uttar pradesh", "uttarakhand", "west bengal", "delhi", "chandigarh", "puducherry",
+            "up", "mp", "hp", "uk", "wb", "ap", "ts", "tn", "ka", "mh", "rj", "dl"
+        }
+        for s in KNOWN_INDIAN_STATES:
+            if re.search(rf'\b{re.escape(s)}\b', q_lower):
+                return True, {"type": "state", "val": s}
+                
+        pred_state = raw_prediction.get("state", raw_prediction.get("state_area", "")).strip().lower()
+        if pred_state in KNOWN_INDIAN_STATES:
+            return True, {"type": "state", "val": pred_state}
+            
+        # 3. City / District anchor
+        cursor = conn.cursor()
+        pred_city = raw_prediction.get("city", "").strip().lower()
+        if pred_city and len(pred_city) >= 3:
+            cursor.execute("SELECT 1 FROM pincodes WHERE LOWER(district) = ? LIMIT 1", (pred_city,))
+            if cursor.fetchone():
+                return True, {"type": "district", "val": pred_city}
+                
+        # Check words in query against official district names (unless followed by locality suffix like 'nagar', 'colony')
+        LOCALITY_SUFFIXES = {"nagar", "colony", "layout", "vihar", "enclave", "bazaar", "bazar", "society", "puram", "road", "street", "lane", "marg"}
+        tokens = re.findall(r'[a-zA-Z0-9]+', q_lower)
+        for idx, w in enumerate(tokens):
+            if len(w) >= 4 and w not in {"near", "road", "street", "lane", "house", "block", "floor", "wali", "side", "paas", "bhai", "gate", "circle"}:
+                if idx + 1 < len(tokens) and tokens[idx+1] in LOCALITY_SUFFIXES:
+                    continue
+                cursor.execute("SELECT 1 FROM pincodes WHERE LOWER(district) = ? LIMIT 1", (w,))
+                if cursor.fetchone():
+                    return True, {"type": "district", "val": w}
+                
+        return False, None
+
+    def _evaluate_no_anchor_ambiguity(self, raw_query: str, raw_prediction: dict, conn: sqlite3.Connection):
+        """
+        Step 2 & 3: Universal Ambiguity Gate for No-Anchor inputs.
+        Returns: (is_blocked: bool, block_reason: str, candidates: list)
+        """
+        has_anchor, anchor_info = self._check_geographic_anchor(raw_query, raw_prediction, conn)
+        if has_anchor:
+            return False, None, []
+            
+        # No anchor detected!
+        import re
+        from generic_entity_gazetteer import extract_distinctive_name, is_purely_generic_entity
+        
+        q_clean = raw_query.lower().replace(".", " ").replace(",", " ")
+        
+        # Check if input is purely generic (e.g. 'Block D, opp Block D', 'Main Road')
+        dist_name = extract_distinctive_name(q_clean)
+        if not dist_name or len(dist_name.strip()) <= 1 or is_purely_generic_entity(q_clean):
+            return True, f"Input contains only generic descriptors without city, state, or PIN anchor.", []
+            
+        # Query database for distinct regions matching distinctive n-grams
+        cursor = conn.cursor()
+        words = re.findall(r'[a-zA-Z0-9]+', q_clean)
+        words = [w for w in words if w not in {"near", "opp", "opposite", "behind", "wali", "side", "paas", "bhai", "circle", "road", "pe", "hai", "waha", "jo", "me", "k"}]
+        
+        candidate_phrases = []
+        for n in [3, 2]:
+            for i in range(len(words) - n + 1):
+                phrase = " ".join(words[i:i+n])
+                if len(phrase) >= 5 and not is_purely_generic_entity(phrase):
+                    candidate_phrases.append(phrase)
+                    
+        for w in words:
+            if len(w) >= 4 and not is_purely_generic_entity(w):
+                candidate_phrases.append(w)
+                
+        distinct_regions = set()
+        found_candidates = []
+        
+        for phrase in candidate_phrases[:3]:
+            cursor.execute(
+                "SELECT DISTINCT district, state_name, place_name, pincode FROM pincodes WHERE place_name LIKE ? LIMIT 10",
+                (f"%{phrase}%",)
+            )
+            rows = cursor.fetchall()
+            for r in rows:
+                distinct_regions.add((r[0].lower(), r[1].lower()))
+                found_candidates.append(dict(r))
+                
+        # Step 3: Hard Gate Decision
+        if len(distinct_regions) > 1:
+            return True, f"Multi-region ambiguity: '{raw_query}' matches {len(distinct_regions)} distinct districts across India without any city or PIN anchor.", found_candidates
+            
+        if len(distinct_regions) == 0:
+            return True, f"No verified geographic match found for minimal input without city or PIN anchor.", []
+            
+        # Exactly 1 match: Verify it's not an obscure rural post office or short generic token
+        if len(dist_name) < 4:
+            return True, f"Ambiguous generic match without anchor.", found_candidates
+            
+        return False, None, found_candidates
+
     def verify(self, raw_prediction: dict) -> dict:
         pincode = self._extract_and_normalize_pincode(raw_prediction)
         pred_house_number = raw_prediction.get("house_number", "").strip()
@@ -725,6 +854,39 @@ class IndiaPincodeVerifier(AddressVerifier):
         conn = sqlite3.connect(self.db_path)
         conn.row_factory = sqlite3.Row
         cursor = conn.cursor()
+        
+        # =========================================================================
+        # UNIVERSAL GEOGRAPHIC ANCHOR & AMBIGUITY GATEKEEPER
+        # Step 1: Check for City / State / PIN anchor anywhere in the input.
+        # Step 2: For no-anchor addresses, count distinct regions matching the locality.
+        # Step 3: If count > 1 (or zero/obscure), unconditionally return UNVERIFIED.
+        # =========================================================================
+        is_blocked, block_reason, block_cands = self._evaluate_no_anchor_ambiguity(raw_query, raw_prediction, conn)
+        if is_blocked:
+            conn.close()
+            resolved_unv = raw_prediction.copy()
+            resolved_unv["postal_code"] = ""
+            resolved_unv["display_city"] = raw_prediction.get("city", "")
+            resolved_unv["routing_district"] = ""
+            resolved_unv["raw_city"] = raw_prediction.get("city", "")
+            resolved_unv["normalized_city"] = self.normalize_city(raw_prediction.get("city", ""))
+            resolved_unv["city"] = raw_prediction.get("city", "")
+            resolved_unv["district"] = ""
+            resolved_unv["state"] = raw_prediction.get("state", raw_prediction.get("state_area", ""))
+            resolved_unv["state_area"] = raw_prediction.get("state", raw_prediction.get("state_area", ""))
+            return {
+                "resolved": resolved_unv,
+                "verification": {
+                    "status": "unverified",
+                    "method": "no_anchor_ambiguity_gate",
+                    "match_score": 0.0,
+                    "reason": block_reason,
+                    "matched_place": None,
+                    "resolution_reason": "Multi-region ambiguity without geographic anchor",
+                    "confidence": 0.0,
+                    "candidates": block_cands[:5] if block_cands else None
+                }
+            }
         
         candidates = []
         pincode_is_valid = True
@@ -818,22 +980,45 @@ class IndiaPincodeVerifier(AddressVerifier):
             r'\b(faridabad.*badarpur|badarpur)\b': {"pin": "110044", "city": "New Delhi", "dist": "South Delhi", "state": "Delhi"},
             r'\b(rohini)\b': {"pin": "110085", "city": "New Delhi", "dist": "North West Delhi", "state": "Delhi"},
             r'\b(hsr\s*layout)\b': {"pin": "560102", "city": "Bengaluru", "dist": "Bengaluru", "state": "Karnataka"},
-            r'\b(sector\s*4\s*dwarka)\b': {"pin": "110078", "city": "New Delhi", "dist": "South West Delhi", "state": "Delhi"}
+            r'\b(sector\s*4\s*dwarka)\b': {"pin": "110078", "city": "New Delhi", "dist": "South West Delhi", "state": "Delhi"},
+            r'\b(krishnarajapuram|kr\s*puram|old\s*madras\s*r(oa)?d)\b': {"pin": "560036", "city": "Bengaluru", "dist": "Bengaluru", "state": "Karnataka"}
         }
         
-        preproc_query_check = preprocess_address(raw_query).lower()
-        matched_urban_override = None
-        for pat, target_info in URBAN_LOCALITY_PIN_OVERRIDES.items():
-            if re.search(pat, preproc_query_check, re.IGNORECASE):
-                matched_urban_override = target_info
-                break
-                
-        if matched_urban_override:
-            pincode = matched_urban_override["pin"]
-            pincode_is_valid = True
-            resolved_district = matched_urban_override["dist"]
-            pred_city = matched_urban_override["city"]
-            pred_state = matched_urban_override["state"]
+        # Only attempt Sub-Locality / Layout matching if NO valid 6-digit PIN code is already present in the input!
+        if not pincode or len(pincode) != 6 or not pincode.isdigit():
+            preproc_query_check = preprocess_address(raw_query).lower()
+            matched_urban_override = None
+            for pat, target_info in URBAN_LOCALITY_PIN_OVERRIDES.items():
+                if re.search(pat, preproc_query_check, re.IGNORECASE):
+                    matched_urban_override = target_info
+                    break
+            if not matched_urban_override:
+                from transit_roads_gazetteer import match_transit_road
+                transit_road = match_transit_road(raw_query)
+                if transit_road:
+                    matched_urban_override = {
+                        "pin": transit_road["pincode"],
+                        "city": transit_road["city"],
+                        "dist": transit_road["district"],
+                        "state": transit_road["state"]
+                    }
+            if not matched_urban_override:
+                from urban_sublocalities_matcher import match_urban_sublocality
+                subloc_match = match_urban_sublocality(raw_query, context_city=pred_city)
+                if subloc_match and subloc_match.get("pincode"):
+                    matched_urban_override = {
+                        "pin": str(subloc_match["pincode"]),
+                        "city": subloc_match["city"],
+                        "dist": subloc_match["district"],
+                        "state": subloc_match["state"]
+                    }
+                    
+            if matched_urban_override:
+                pincode = matched_urban_override["pin"]
+                pincode_is_valid = True
+                resolved_district = matched_urban_override["dist"]
+                pred_city = matched_urban_override["city"]
+                pred_state = matched_urban_override["state"]
         
         # Attempt A: PIN code lookup
         if pincode and len(pincode) == 6 and pincode.isdigit():
@@ -926,22 +1111,60 @@ class IndiaPincodeVerifier(AddressVerifier):
                         candidates = dist_candidates
                         break
 
-            # 2. Query full phrase and unspaced phrase if multiple words
+            # 2. Query n-grams (3-word, 2-word) and unspaced phrases
             if not candidates and len(query_words) >= 2:
-                full_phrase = " ".join(query_words)
-                full_phrase_unspaced = "".join(query_words)
-                cursor.execute(
-                    "SELECT place_name, district, state_name, pincode, latitude, longitude FROM pincodes WHERE place_name LIKE ? OR place_name LIKE ? LIMIT 500", 
-                    (f"%{full_phrase}%", f"%{full_phrase_unspaced}%")
-                )
-                candidates = [dict(row) for row in cursor.fetchall()]
+                # Generate candidate n-grams
+                ngrams = []
+                for n in [3, 2]:
+                    for i in range(len(query_words) - n + 1):
+                        ngrams.append(" ".join(query_words[i:i+n]))
+                        ngrams.append("".join(query_words[i:i+n]))
                 
+                for ng in ngrams:
+                    if len(ng) >= 5:
+                        if resolved_district:
+                            cursor.execute(
+                                "SELECT place_name, district, state_name, pincode, latitude, longitude FROM pincodes WHERE (place_name LIKE ? OR place_name LIKE ?) AND LOWER(district) = ? LIMIT 500", 
+                                (f"%{ng}%", f"%{ng.replace(' ', '')}%", resolved_district.lower())
+                            )
+                        elif resolved_state:
+                            cursor.execute(
+                                "SELECT place_name, district, state_name, pincode, latitude, longitude FROM pincodes WHERE (place_name LIKE ? OR place_name LIKE ?) AND LOWER(state_name) = ? LIMIT 500", 
+                                (f"%{ng}%", f"%{ng.replace(' ', '')}%", resolved_state.lower())
+                            )
+                        else:
+                            cursor.execute(
+                                "SELECT place_name, district, state_name, pincode, latitude, longitude FROM pincodes WHERE place_name LIKE ? OR place_name LIKE ? LIMIT 500", 
+                                (f"%{ng}%", f"%{ng.replace(' ', '')}%")
+                            )
+                        ng_candidates = [dict(row) for row in cursor.fetchall()]
+                        if ng_candidates:
+                            candidates.extend(ng_candidates)
+                            if len(candidates) >= 500:
+                                break
+                
+            # 3. Word-level search scoped by known district or state
             if not candidates:
+                from generic_entity_gazetteer import is_generic_token
                 for word in query_words:
-                    cursor.execute(
-                        "SELECT place_name, district, state_name, pincode, latitude, longitude FROM pincodes WHERE place_name LIKE ? LIMIT 500", 
-                        (f"%{word}%",)
-                    )
+                    # Skip purely generic words like 'tower', 'road', 'market', 'plaza' from individual nationwide search
+                    if is_generic_token(word):
+                        continue
+                    if resolved_district:
+                        cursor.execute(
+                            "SELECT place_name, district, state_name, pincode, latitude, longitude FROM pincodes WHERE place_name LIKE ? AND LOWER(district) = ? LIMIT 500", 
+                            (f"%{word}%", resolved_district.lower())
+                        )
+                    elif resolved_state:
+                        cursor.execute(
+                            "SELECT place_name, district, state_name, pincode, latitude, longitude FROM pincodes WHERE place_name LIKE ? AND LOWER(state_name) = ? LIMIT 500", 
+                            (f"%{word}%", resolved_state.lower())
+                        )
+                    else:
+                        cursor.execute(
+                            "SELECT place_name, district, state_name, pincode, latitude, longitude FROM pincodes WHERE place_name LIKE ? LIMIT 500", 
+                            (f"%{word}%",)
+                        )
                     word_candidates = [dict(row) for row in cursor.fetchall()]
                     if word_candidates:
                         candidates.extend(word_candidates)
@@ -1133,14 +1356,24 @@ class IndiaPincodeVerifier(AddressVerifier):
                 }
             }
         elif is_ambiguous:
+            resolved_amb = raw_prediction.copy()
+            resolved_amb["postal_code"] = ""
+            resolved_amb["display_city"] = raw_prediction.get("city", "")
+            resolved_amb["routing_district"] = ""
+            resolved_amb["raw_city"] = raw_prediction.get("city", "")
+            resolved_amb["normalized_city"] = self.normalize_city(raw_prediction.get("city", ""))
+            resolved_amb["city"] = raw_prediction.get("city", "")
+            resolved_amb["district"] = ""
+            resolved_amb["state"] = raw_prediction.get("state", raw_prediction.get("state_area", ""))
+            resolved_amb["state_area"] = raw_prediction.get("state", raw_prediction.get("state_area", ""))
             return {
-                "resolved": resolved,
+                "resolved": resolved_amb,
                 "verification": {
-                    "status": "ambiguous",
-                    "method": "fuzzy_match",
+                    "status": "unverified",
+                    "method": "ambiguous_location",
                     "match_score": round(best_score, 4),
-                    "reason": f"Multiple location matches found across different districts ({len(ambiguous_options)} candidates). Please select your intended location.",
-                    "matched_place": best_cand["place_name"],
+                    "reason": f"Multiple location matches found across different districts ({len(ambiguous_options)} candidates). Please specify city.",
+                    "matched_place": None,
                     "resolution_reason": res_obj.reason,
                     "confidence": 0.40,
                     "candidates": ambiguous_options
@@ -1149,8 +1382,10 @@ class IndiaPincodeVerifier(AddressVerifier):
         else:
             if best_score < 0.35:
                 resolved = raw_prediction.copy()
-                if pincode:
+                if pincode and len(pincode) == 6 and pincode.isdigit():
                     resolved["postal_code"] = pincode
+                else:
+                    resolved["postal_code"] = ""
                 resolved["display_city"] = raw_prediction.get("city", "")
                 resolved["routing_district"] = raw_prediction.get("city", "")
                 resolved["raw_city"] = raw_prediction.get("city", "")
