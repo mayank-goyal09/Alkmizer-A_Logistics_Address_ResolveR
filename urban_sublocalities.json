@@ -1,0 +1,3346 @@
+{
+  "motors scouts camp road": {
+    "canonical_name": "Motors Scouts Camp Road",
+    "distinctive_name": "motors scouts",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "561203",
+    "full_source_address": "Near Sapthagiri Motors Scouts Camp Road, Doddaballapur Old Bus Stand to Hemavathi Pete Road, Doddaballapur Bazaar, Bangalore-561203, Karnataka"
+  },
+  "doddaballapur old bus stand to hemavathi pete road": {
+    "canonical_name": "Doddaballapur Old Bus Stand to Hemavathi Pete Road",
+    "distinctive_name": "doddaballapur old to hemavathi",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "561203",
+    "full_source_address": "Near Sapthagiri Motors Scouts Camp Road, Doddaballapur Old Bus Stand to Hemavathi Pete Road, Doddaballapur Bazaar, Bangalore-561203, Karnataka"
+  },
+  "doddaballapur bazaar": {
+    "canonical_name": "Doddaballapur Bazaar",
+    "distinctive_name": "doddaballapur",
+    "city": "Bengaluru",
+    "district": "Bengaluru Rural",
+    "state": "Karnataka",
+    "pincode": "561203"
+  },
+  "bodycraft complex": {
+    "canonical_name": "Bodycraft Complex",
+    "distinctive_name": "bodycraft",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011",
+    "full_source_address": "10/1, Bodycraft Complex, Near Ashoka Pillar, 100 Feet T Mariyappa Road, Jayanagar 1st Block, Bangalore-560011, Karnataka"
+  },
+  "100 feet t mariyappa road": {
+    "canonical_name": "100 Feet T Mariyappa Road",
+    "distinctive_name": "100 feet t mariyappa",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011",
+    "full_source_address": "10/1, Bodycraft Complex, Near Ashoka Pillar, 100 Feet T Mariyappa Road, Jayanagar 1st Block, Bangalore-560011, Karnataka"
+  },
+  "jayanagar 1st block": {
+    "canonical_name": "Jayanagar 1st Block",
+    "distinctive_name": "jayanagar 1st",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011"
+  },
+  "beml layout": {
+    "canonical_name": "BEML Layout",
+    "distinctive_name": "beml",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560098"
+  },
+  "rajarajeshwari nagar": {
+    "canonical_name": "Rajarajeshwari Nagar",
+    "distinctive_name": "rajarajeshwari",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560098",
+    "full_source_address": "Beml Layout, Opposite Ramamandir, Rajarajeshwari Nagar, Bangalore-560098, Karnataka"
+  },
+  "sai arcade": {
+    "canonical_name": "Sai Arcade",
+    "distinctive_name": "sai",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560040",
+    "full_source_address": "No.21, Sai Arcade, Behind Indira Canteen, 1st Stage, 2nd Phase, Chandra Layout, Bangalore-560040, Karnataka"
+  },
+  "1st stage": {
+    "canonical_name": "1st Stage",
+    "distinctive_name": "1st stage",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560040",
+    "full_source_address": "No.21, Sai Arcade, Behind Indira Canteen, 1st Stage, 2nd Phase, Chandra Layout, Bangalore-560040, Karnataka"
+  },
+  "2nd phase": {
+    "canonical_name": "2nd Phase",
+    "distinctive_name": "2nd",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560040",
+    "full_source_address": "No.21, Sai Arcade, Behind Indira Canteen, 1st Stage, 2nd Phase, Chandra Layout, Bangalore-560040, Karnataka"
+  },
+  "chandra layout": {
+    "canonical_name": "Chandra Layout",
+    "distinctive_name": "chandra",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560040"
+  },
+  "mahalakshmi layout": {
+    "canonical_name": "Mahalakshmi Layout",
+    "distinctive_name": "mahalakshmi",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560096"
+  },
+  "shankar nagar": {
+    "canonical_name": "Shankar Nagar",
+    "distinctive_name": "shankar",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560096",
+    "full_source_address": "No 5, Near More Super Market, 3rd Main Road, Mahalakshmi Layout, Shankar Nagar, Bangalore-560096, Karnataka"
+  },
+  "ayyappa nagar": {
+    "canonical_name": "Ayyappa Nagar",
+    "distinctive_name": "ayyappa",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560036"
+  },
+  "kodigehalli main road": {
+    "canonical_name": "Kodigehalli Main Road",
+    "distinctive_name": "kodigehalli",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560036",
+    "full_source_address": "No.260/1 Coconut Garden, Ayyappa Nagar, Krishnarajapura, Bengaluru, Opp Sapthagiri Healt Care, Kodigehalli Main Road, Krishnarajapuram, Bangalore-560036, Karnataka"
+  },
+  "raja market": {
+    "canonical_name": "Avenue Road Raja Market",
+    "distinctive_name": "avenue raja",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560002"
+  },
+  "avenue road": {
+    "canonical_name": "Avenue Road Raja Market",
+    "distinctive_name": "avenue raja",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560002"
+  },
+  "rpp arcade": {
+    "canonical_name": "Sampige Road Malleswaram",
+    "distinctive_name": "sampige malleswaram",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560003"
+  },
+  "sampige road": {
+    "canonical_name": "Sampige Road Malleswaram",
+    "distinctive_name": "sampige malleswaram",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560003"
+  },
+  "aleena arcade": {
+    "canonical_name": "Aleena Arcade",
+    "distinctive_name": "aleena",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560036",
+    "full_source_address": "No.23, Aleena Arcade, Old Madras Road, Krishnarajapuram, Bangalore-560036, Karnataka"
+  },
+  "old madras road": {
+    "canonical_name": "Old Madras Road",
+    "distinctive_name": "old madras",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560036",
+    "full_source_address": "No.23, Aleena Arcade, Old Madras Road, Krishnarajapuram, Bangalore-560036, Karnataka"
+  },
+  "dickenson road": {
+    "canonical_name": "Dickenson Road",
+    "distinctive_name": "dickenson",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560042",
+    "full_source_address": "No. 18, Near RBANM School, Main Road, Ward No. 81, Dickenson Road, Bangalore-560042, Karnataka"
+  },
+  "muthsandra main road": {
+    "canonical_name": "Muthsandra Main Road",
+    "distinctive_name": "muthsandra",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560087",
+    "full_source_address": "Shop No 60/3, Ganesh Jewellers Building, Opposite Mahaveer Hardware, Muthsandra Main Road, Varthur, Bangalore-560087, Karnataka"
+  },
+  "royal shelters layout": {
+    "canonical_name": "Royal Shelters Layout",
+    "distinctive_name": "royal shelters",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560076",
+    "full_source_address": "Door No. 259/1, Royal Shelters Layout, Behind People Tree Hospital, Devarachikkana Halli Main Road, Devarachikkana Halli, Bangalore-560076, Karnataka"
+  },
+  "devarachikkana halli main road": {
+    "canonical_name": "Devarachikkana Halli Main Road",
+    "distinctive_name": "devarachikkana halli",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560076",
+    "full_source_address": "Door No. 259/1, Royal Shelters Layout, Behind People Tree Hospital, Devarachikkana Halli Main Road, Devarachikkana Halli, Bangalore-560076, Karnataka"
+  },
+  "devarachikkana halli": {
+    "canonical_name": "Devarachikkana Halli",
+    "distinctive_name": "devarachikkana halli",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560076",
+    "full_source_address": "Door No. 259/1, Royal Shelters Layout, Behind People Tree Hospital, Devarachikkana Halli Main Road, Devarachikkana Halli, Bangalore-560076, Karnataka"
+  },
+  "10th main road": {
+    "canonical_name": "10th Main Road",
+    "distinctive_name": "10th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011",
+    "full_source_address": "No.525, Opposite Kandala House Of Jewellers, 33rd Cross, 10th Main Road, Jayanagar, Bangalore-560011, Karnataka"
+  },
+  "vignan nagar main road": {
+    "canonical_name": "Vignan Nagar Main Road",
+    "distinctive_name": "vignan",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560075",
+    "full_source_address": "No 2, Aishwarya Ground Floor, Opp Ramdev Hi Fashion, Vignan Nagar Main Road, Malleshpalya, Bangalore-560075, Karnataka"
+  },
+  "electronic city phase 2": {
+    "canonical_name": "Electronic City Phase 2",
+    "distinctive_name": "electronic city 2",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560100",
+    "full_source_address": "11, Luxmi Restaurant, S S Medical, DoddanMangal, Electronic City Phase 2, Bangalore-560100, Karnataka"
+  },
+  "19th main road 1st block": {
+    "canonical_name": "19th Main Road 1st Block",
+    "distinctive_name": "19th 1st",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560010",
+    "full_source_address": "1113, Prakash Jewellers, Near Rajajinagar Metro Station, 19th Main Road 1st Block, Rajajinagar, Bangalore-560010, Karnataka"
+  },
+  "hsr layout": {
+    "canonical_name": "HSR Layout",
+    "distinctive_name": "hsr",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560102",
+    "full_source_address": "Building No 8, Near BDA Complex, 17th Cross 7th Sector, HSR Layout, Bangalore-560102, Karnataka"
+  },
+  "thanisndra main road": {
+    "canonical_name": "Thanisndra Main Road",
+    "distinctive_name": "thanisndra",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560077",
+    "full_source_address": "No. 5, Sy No. 74, Near Bharath Petroleum, Thanisndra Main Road, Hegde Nagar, Bangalore-560077, Karnataka"
+  },
+  "hegde nagar": {
+    "canonical_name": "Hegde Nagar",
+    "distinctive_name": "hegde",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560077",
+    "full_source_address": "No. 5, Sy No. 74, Near Bharath Petroleum, Thanisndra Main Road, Hegde Nagar, Bangalore-560077, Karnataka"
+  },
+  "12th main road": {
+    "canonical_name": "12th Main Road",
+    "distinctive_name": "12th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560050",
+    "full_source_address": "No 3, Opp Raghavendra Layout, 12th Main Road, Banashankari, Bangalore-560050, Karnataka"
+  },
+  "2nd stage": {
+    "canonical_name": "2nd Stage",
+    "distinctive_name": "2nd stage",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560076",
+    "full_source_address": "#814, 2nd Stage, Opp.mahadeshwara Temple, BTM Layout 2nd Stage, Bangalore-560076, Karnataka"
+  },
+  "btm layout 2nd stage": {
+    "canonical_name": "BTM Layout 2nd Stage",
+    "distinctive_name": "btm 2nd stage",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560076",
+    "full_source_address": "#814, 2nd Stage, Opp.mahadeshwara Temple, BTM Layout 2nd Stage, Bangalore-560076, Karnataka"
+  },
+  "ramanashree enclave": {
+    "canonical_name": "Ramanashree Enclave",
+    "distinctive_name": "ramanashree",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560076",
+    "full_source_address": "1, Ramanashree Enclave, Ground Floor, Near MG School For Excellence, Bilekahalli, Bangalore-560076, Karnataka"
+  },
+  "9th main road (vijaynagar) near metro station": {
+    "canonical_name": "9th Main Road (Vijaynagar) Near Metro Station",
+    "distinctive_name": "9th (vijaynagar) near",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560040",
+    "full_source_address": "No 1238, 1238, 9th Main Road (Vijaynagar) Near Metro Station, Near Vijayanagar Metro Station, 9th Main Road 80 Feet Road, Vijayanagar, Bangalore-560040, Karnataka"
+  },
+  "9th main road 80 feet road": {
+    "canonical_name": "9th Main Road 80 Feet Road",
+    "distinctive_name": "9th 80 feet",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560040",
+    "full_source_address": "No 1238, 1238, 9th Main Road (Vijaynagar) Near Metro Station, Near Vijayanagar Metro Station, 9th Main Road 80 Feet Road, Vijayanagar, Bangalore-560040, Karnataka"
+  },
+  "4th cross road 2 nd stage": {
+    "canonical_name": "4th Cross Road 2 Nd Stage",
+    "distinctive_name": "4th 2 nd stage",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560040",
+    "full_source_address": "Shop No-#21, Near By Santosh Gym and Balaji Temple, 5th Main, 4th Cross Road 2 Nd Stage, Vijayanagar, Bangalore-560040, Karnataka"
+  },
+  "bommanahalli road": {
+    "canonical_name": "Bommanahalli Road",
+    "distinctive_name": "bommanahalli",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560076",
+    "full_source_address": "Shop No 13/A, Near Golden Apartment, Devarachikkanahalli, Bommanahalli Road, Kodichikkana Halli, Bangalore-560076, Karnataka"
+  },
+  "kodichikkana halli": {
+    "canonical_name": "Kodichikkana Halli",
+    "distinctive_name": "kodichikkana halli",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560076",
+    "full_source_address": "Shop No 13/A, Near Golden Apartment, Devarachikkanahalli, Bommanahalli Road, Kodichikkana Halli, Bangalore-560076, Karnataka"
+  },
+  "mahalakshmipuram layout": {
+    "canonical_name": "Mahalakshmipuram Layout",
+    "distinctive_name": "mahalakshmipuram",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560086",
+    "full_source_address": "No.88/D, Opposite Panchamukhi Ganesh Temple, 12th Cross, Mahalakshmipuram Layout, Bangalore-560086, Karnataka"
+  },
+  "pipeline circle": {
+    "canonical_name": "Pipeline Circle",
+    "distinctive_name": "pipeline",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560050",
+    "full_source_address": "No 36, Pipeline Circle, Near Ganesha Temple, 14th Main, Ramanjaneya Road, Srinagar, Banashankari, Bangalore-560050, Karnataka"
+  },
+  "ramanjaneya road": {
+    "canonical_name": "Ramanjaneya Road",
+    "distinctive_name": "ramanjaneya",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560050",
+    "full_source_address": "No 36, Pipeline Circle, Near Ganesha Temple, 14th Main, Ramanjaneya Road, Srinagar, Banashankari, Bangalore-560050, Karnataka"
+  },
+  "bank road": {
+    "canonical_name": "Bank Road",
+    "distinctive_name": "bank",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560003",
+    "full_source_address": "#16, 7th Cross, Near Yes Bank Road, Sampige Road, Malleswaram, Bangalore-560003, Karnataka"
+  },
+  "indra nagar": {
+    "canonical_name": "Indra Nagar",
+    "distinctive_name": "indra",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560084",
+    "full_source_address": "Shop No 1, Indra Nagar, Samovar Cafe, 2nd F Cross Road, Kammanahalli, Bangalore-560084, Karnataka"
+  },
+  "2nd f cross road": {
+    "canonical_name": "2nd F Cross Road",
+    "distinctive_name": "2nd f",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560084",
+    "full_source_address": "Shop No 1, Indra Nagar, Samovar Cafe, 2nd F Cross Road, Kammanahalli, Bangalore-560084, Karnataka"
+  },
+  "16th main road": {
+    "canonical_name": "16th Main Road",
+    "distinctive_name": "16th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560041",
+    "full_source_address": "#364, Aswatha Lakshmi Mansion, Near Canara Bank, 16th Main Road, Jayanagar 4th T Block, Bangalore-560041, Karnataka"
+  },
+  "jayanagar 4th t block": {
+    "canonical_name": "Jayanagar 4th T Block",
+    "distinctive_name": "jayanagar 4th t",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560041",
+    "full_source_address": "#364, Aswatha Lakshmi Mansion, Near Canara Bank, 16th Main Road, Jayanagar 4th T Block, Bangalore-560041, Karnataka"
+  },
+  "dickinson road": {
+    "canonical_name": "Dickinson Road",
+    "distinctive_name": "dickinson",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560042",
+    "full_source_address": "Shop No 8, Near By Commercial Street Junction, Dickinson Road, Kamaraj Road, Bangalore-560042, Karnataka"
+  },
+  "kamaraj road": {
+    "canonical_name": "Kamaraj Road",
+    "distinctive_name": "kamaraj",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560042",
+    "full_source_address": "Shop No 8, Near By Commercial Street Junction, Dickinson Road, Kamaraj Road, Bangalore-560042, Karnataka"
+  },
+  "4th block": {
+    "canonical_name": "4th Block",
+    "distinctive_name": "4th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011",
+    "full_source_address": "522/8, 33rd Cross, 9th Main, 4th Block, Near Cool Joint, Jayanagar 4th Block East, Bangalore-560011, Karnataka"
+  },
+  "jayanagar 4th block east": {
+    "canonical_name": "Jayanagar 4th Block East",
+    "distinctive_name": "jayanagar 4th east",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011",
+    "full_source_address": "522/8, 33rd Cross, 9th Main, 4th Block, Near Cool Joint, Jayanagar 4th Block East, Bangalore-560011, Karnataka"
+  },
+  "bangalore - 561203 (near sapthagiri motors scouts camp road)": {
+    "canonical_name": "Bangalore - 561203 (Near Sapthagiri Motors Scouts Camp Road)",
+    "distinctive_name": "bangalore - 561203 (near sapthagiri motors scouts",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "561203",
+    "full_source_address": "Doddaballapur Old Bus Stand to Hemavathi Pete Road, Doddaballapur Bazaar, Bangalore - 561203 (Near Sapthagiri Motors Scouts Camp Road)"
+  },
+  "bangalore - 560096 (near more super market)": {
+    "canonical_name": "Bangalore - 560096 (Near More Super Market)",
+    "distinctive_name": "bangalore - 560096 (near )",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560096",
+    "full_source_address": "No 5, 3rd Main Road, Mahalakshmi Layout, Shankar Nagar, Bangalore - 560096 (Near More Super Market)"
+  },
+  "green layout phase3": {
+    "canonical_name": "Green Layout Phase3",
+    "distinctive_name": "phase3",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560064",
+    "full_source_address": "Green Layout Phase3, In Front Of Nakshatra Celestia, CHOKKANAHALLI, Bangalore - 560064 (Opposite Nakshatra Celestia, Near to Sudarshan Layout)"
+  },
+  "sudarshan layout)": {
+    "canonical_name": "Sudarshan Layout)",
+    "distinctive_name": "sudarshan",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560064",
+    "full_source_address": "Green Layout Phase3, In Front Of Nakshatra Celestia, CHOKKANAHALLI, Bangalore - 560064 (Opposite Nakshatra Celestia, Near to Sudarshan Layout)"
+  },
+  "ksp complex 3rd stage 4th block": {
+    "canonical_name": "Ksp Complex 3rd Stage 4th Block",
+    "distinctive_name": "ksp 3rd stage 4th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560079",
+    "full_source_address": "No 316, Ksp Complex 3rd Stage 4th Block, Basaveshwara Nagar, Bangalore - 560079 (Near Priyadarshini Grand)"
+  },
+  "basaveshwara nagar": {
+    "canonical_name": "Basaveshwara Nagar",
+    "distinctive_name": "basaveshwara",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560079",
+    "full_source_address": "No 316, Ksp Complex 3rd Stage 4th Block, Basaveshwara Nagar, Bangalore - 560079 (Near Priyadarshini Grand)"
+  },
+  "kodigehali main road": {
+    "canonical_name": "Kodigehali Main Road",
+    "distinctive_name": "kodigehali",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560048",
+    "full_source_address": "Kodigehali Main Road, Hoodi, Bangalore - 560048 (Opposite Alphain Fisa Apartment, Near Hoodi Railway Station)"
+  },
+  "old age home road": {
+    "canonical_name": "Old Age Home Road",
+    "distinctive_name": "old age",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560043",
+    "full_source_address": "Old Age Home Road, Horamavu, Bangalore - 560043 (Below N Creative Salon)"
+  },
+  "7th b main road 16th b cross": {
+    "canonical_name": "7th B Main Road 16th B Cross",
+    "distinctive_name": "7th b 16th b",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560064",
+    "full_source_address": "No 2265, 1st Floor, 7th B Main Road 16th B Cross, Yelahanka New Town, Bangalore - 560064 (Near Yelahanka New Town Bus Stop)"
+  },
+  "silver springs layout": {
+    "canonical_name": "Silver Springs Layout",
+    "distinctive_name": "silver springs",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560037",
+    "full_source_address": "Silver Springs Layout, Victorian Meadows Road, Munekollal, Bangalore - 560037 (Behind Yashomati Hospital)"
+  },
+  "victorian meadows road": {
+    "canonical_name": "Victorian Meadows Road",
+    "distinctive_name": "victorian",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560037",
+    "full_source_address": "Silver Springs Layout, Victorian Meadows Road, Munekollal, Bangalore - 560037 (Behind Yashomati Hospital)"
+  },
+  "mmg complex": {
+    "canonical_name": "MMG Complex",
+    "distinctive_name": "mmg",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560016",
+    "full_source_address": "MMG Complex, 10th Cross 1st Block Varanasi Road, Varanasi-Ramamurthy Nagar, Bangalore - 560016 (Opposite To M S Steel Traders)"
+  },
+  "10th cross 1st block varanasi road": {
+    "canonical_name": "10th Cross 1st Block Varanasi Road",
+    "distinctive_name": "10th 1st varanasi",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560016",
+    "full_source_address": "MMG Complex, 10th Cross 1st Block Varanasi Road, Varanasi-Ramamurthy Nagar, Bangalore - 560016 (Opposite To M S Steel Traders)"
+  },
+  "varanasi-ramamurthy nagar": {
+    "canonical_name": "Varanasi-Ramamurthy Nagar",
+    "distinctive_name": "varanasi-ramamurthy",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560016",
+    "full_source_address": "MMG Complex, 10th Cross 1st Block Varanasi Road, Varanasi-Ramamurthy Nagar, Bangalore - 560016 (Opposite To M S Steel Traders)"
+  },
+  "muniyappa layout": {
+    "canonical_name": "Muniyappa Layout",
+    "distinctive_name": "muniyappa",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560016",
+    "full_source_address": "No.40 Muniyappa Layout, 5th Cross Road, Ramamurthy Nagar, Bangalore - 560016 (Behind Indian Oil Petrol Pump )"
+  },
+  "5th cross road": {
+    "canonical_name": "5th Cross Road",
+    "distinctive_name": "5th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560016",
+    "full_source_address": "No.40 Muniyappa Layout, 5th Cross Road, Ramamurthy Nagar, Bangalore - 560016 (Behind Indian Oil Petrol Pump )"
+  },
+  "ramamurthy nagar": {
+    "canonical_name": "Ramamurthy Nagar",
+    "distinctive_name": "ramamurthy",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560016",
+    "full_source_address": "No.40 Muniyappa Layout, 5th Cross Road, Ramamurthy Nagar, Bangalore - 560016 (Behind Indian Oil Petrol Pump )"
+  },
+  "6th phase": {
+    "canonical_name": "6th Phase",
+    "distinctive_name": "6th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560010",
+    "full_source_address": "No 95, 6th Phase, 1st Stage, Shivnagar, Rajajinagar, Bangalore - 560010 (Near Mahaganapati Nagar)"
+  },
+  "bangalore - 560010 (near mahaganapati nagar)": {
+    "canonical_name": "Bangalore - 560010 (Near Mahaganapati Nagar)",
+    "distinctive_name": "bangalore - 560010 (near mahaganapati",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560010",
+    "full_source_address": "No 95, 6th Phase, 1st Stage, Shivnagar, Rajajinagar, Bangalore - 560010 (Near Mahaganapati Nagar)"
+  },
+  "12th cross hmt layout": {
+    "canonical_name": "12th Cross HMT Layout",
+    "distinctive_name": "12th hmt",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560097",
+    "full_source_address": "12th Cross HMT Layout, Shri Kalika Durgaparameshwari Temple Road, Vidyaranyapura, Bangalore - 560097"
+  },
+  "shri kalika durgaparameshwari temple road": {
+    "canonical_name": "Shri Kalika Durgaparameshwari Temple Road",
+    "distinctive_name": "shri kalika durgaparameshwari",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560097",
+    "full_source_address": "12th Cross HMT Layout, Shri Kalika Durgaparameshwari Temple Road, Vidyaranyapura, Bangalore - 560097"
+  },
+  "old bustop road kengeri": {
+    "canonical_name": "Old Bustop Road Kengeri",
+    "distinctive_name": "old bustop kengeri",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560060",
+    "full_source_address": "#67 Ground Floor, Old Bustop Road Kengeri, Kengeri, Bangalore - 560060 (Opposite to Lakshmi Trading)"
+  },
+  "magadi road": {
+    "canonical_name": "Magadi Road",
+    "distinctive_name": "magadi",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560023",
+    "full_source_address": "No. 20, Opposite Rangamma Muniswamappa Bhavan, 6th Cross, Magadi Road, Bangalore-560023, Karnataka"
+  },
+  "jp nagar": {
+    "canonical_name": "Jp Nagar",
+    "distinctive_name": "jp",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560078",
+    "full_source_address": "No 54/B Shop No 3, Opp Shiva Temple, 9th Main, 9th Cross, Phase 1, Jp Nagar, Bangalore-560078, Karnataka"
+  },
+  "9th main road": {
+    "canonical_name": "9th Main Road",
+    "distinctive_name": "9th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011",
+    "full_source_address": "20/1/2, Opposite to Hotel Pai Viceroy, 9th Main Road, Jayanagar 3rd Block, Bangalore-560011, Karnataka"
+  },
+  "jayanagar 3rd block": {
+    "canonical_name": "Jayanagar 3rd Block",
+    "distinctive_name": "jayanagar 3rd",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011",
+    "full_source_address": "20/1/2, Opposite to Hotel Pai Viceroy, 9th Main Road, Jayanagar 3rd Block, Bangalore-560011, Karnataka"
+  },
+  "main magadi road": {
+    "canonical_name": "Main Magadi Road",
+    "distinctive_name": "main magadi",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560023",
+    "full_source_address": "No 97/4-5, Diagonally Opposite to Anjan Theatre, Main Magadi Road, Magadi Road, Bangalore-560023, Karnataka"
+  },
+  "drm tower": {
+    "canonical_name": "Drm Tower",
+    "distinctive_name": "drm",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560002",
+    "full_source_address": "Shop No 102, First Floor, Drm Tower, 19, Medarpet, Kumbarpet, Nagarathpete, Bengaluru, Near Jain Temple, Bettappa Lane, Dodpete, Bangalore-560002, Karnataka"
+  },
+  "sunar market / jewellery market": {
+    "canonical_name": "Sunar Market / Jewellery Market",
+    "distinctive_name": "sunar / jewellery",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110062",
+    "full_source_address": "Prabhu Dayal & Sons Jewellers Pvt Ltd, Plot N. B-40-41, Near By Sunar Market / Jewellery Market, Central Jewellery Market, Madangir, Delhi, 110062"
+  },
+  "central jewellery market": {
+    "canonical_name": "Central Jewellery Market",
+    "distinctive_name": "central jewellery",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110062",
+    "full_source_address": "Prabhu Dayal & Sons Jewellers Pvt Ltd, Plot N. B-40-41, Near By Sunar Market / Jewellery Market, Central Jewellery Market, Madangir, Delhi, 110062"
+  },
+  "lalji shopping complex": {
+    "canonical_name": "Lalji Shopping Complex",
+    "distinctive_name": "lalji",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110067",
+    "full_source_address": "Shop No 1, Lalji Shopping Complex, Munirka Market, Munirka, Delhi, 110067"
+  },
+  "munirka market": {
+    "canonical_name": "Munirka Market",
+    "distinctive_name": "munirka",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110067",
+    "full_source_address": "Shop No 1, Lalji Shopping Complex, Munirka Market, Munirka, Delhi, 110067"
+  },
+  "inside central market": {
+    "canonical_name": "Inside Central Market",
+    "distinctive_name": "inside central",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110024",
+    "full_source_address": "Shop Number E-23/B, Lower Ground Floor, Inside Central Market, Lajpat Nagar 2, Delhi, 110024"
+  },
+  "lajpat nagar 2": {
+    "canonical_name": "Lajpat Nagar 2",
+    "distinctive_name": "lajpat 2",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110024",
+    "full_source_address": "Shop Number E-23/B, Lower Ground Floor, Inside Central Market, Lajpat Nagar 2, Delhi, 110024"
+  },
+  "west vinod nagar": {
+    "canonical_name": "West Vinod Nagar",
+    "distinctive_name": "west vinod",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110092",
+    "full_source_address": "Dhawan Jewellers, E-444, West Vinod Nagar, Street No-8, Vinod Nagar, Delhi, 110092"
+  },
+  "vinod nagar": {
+    "canonical_name": "Vinod Nagar",
+    "distinctive_name": "vinod",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110092",
+    "full_source_address": "Dhawan Jewellers, E-444, West Vinod Nagar, Street No-8, Vinod Nagar, Delhi, 110092"
+  },
+  "venkatadri complex": {
+    "canonical_name": "Venkatadri Complex",
+    "distinctive_name": "venkatadri",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560002",
+    "full_source_address": "No. 54, 55, 56, Venkatadri Complex, Near Rice Memorial Church, Main Road, Avenue Road, Bangalore-560002, Karnataka"
+  },
+  "#963/3 tippu road rk hedge nagar": {
+    "canonical_name": "#963/3 Tippu Road RK Hedge Nagar",
+    "distinctive_name": "#963/3 tippu rk hedge",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560077",
+    "full_source_address": "#963/3 Tippu Road RK Hedge Nagar, Tippu Masjid, 4th Cross, Hegde Nagar, Bangalore-560077, Karnataka"
+  },
+  "jc road": {
+    "canonical_name": "Jc Road",
+    "distinctive_name": "jc",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560002",
+    "full_source_address": "No D7, Ground Floor, Unity Building, Jc Road, Bangalore-560002, Karnataka"
+  },
+  "18th main road": {
+    "canonical_name": "18th Main Road",
+    "distinctive_name": "18th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560078",
+    "full_source_address": "No 1747, 9th Cross, Near to Tirumalagirivenkteswara Temple, 18th Main Road, Jp Nagar 2nd Phase, Bangalore-560078, Karnataka"
+  },
+  "jp nagar 2nd phase": {
+    "canonical_name": "Jp Nagar 2nd Phase",
+    "distinctive_name": "jp 2nd",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560078",
+    "full_source_address": "No 1747, 9th Cross, Near to Tirumalagirivenkteswara Temple, 18th Main Road, Jp Nagar 2nd Phase, Bangalore-560078, Karnataka"
+  },
+  "jayanagar 4th block": {
+    "canonical_name": "Jayanagar 4th Block",
+    "distinctive_name": "jayanagar 4th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011",
+    "full_source_address": "No.39/10, Indian Gems and Jewells, Near Old Post Office, 8th E Main, Jayanagar 4th Block, Bangalore-560011, Karnataka"
+  },
+  "hennur main road": {
+    "canonical_name": "Hennur Main Road",
+    "distinctive_name": "hennur",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560043",
+    "full_source_address": "Square Building, Next to ICICI Bank Ltd, Hennur Main Road, HRBR Layout, Bangalore-560043, Karnataka"
+  },
+  "hrbr layout": {
+    "canonical_name": "HRBR Layout",
+    "distinctive_name": "hrbr",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560043",
+    "full_source_address": "Square Building, Next to ICICI Bank Ltd, Hennur Main Road, HRBR Layout, Bangalore-560043, Karnataka"
+  },
+  "central market": {
+    "canonical_name": "Central Market",
+    "distinctive_name": "central",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110024",
+    "full_source_address": "E-23/B, Basement, Central Market, Lajpat Nagar 2, New Delhi, Delhi – 110024"
+  },
+  "ramphal chowk": {
+    "canonical_name": "Ramphal Chowk",
+    "distinctive_name": "ramphal",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110075",
+    "full_source_address": "Ramphal Chowk, Dwarka Sector 7, New Delhi, Delhi – 110075"
+  },
+  "bara bazar": {
+    "canonical_name": "Bara Bazar",
+    "distinctive_name": "bara",
+    "city": "Gurgaon",
+    "district": "Gurgaon",
+    "state": "Haryana",
+    "pincode": "122001",
+    "full_source_address": "35/151, Bara Bazar, Sohna Chowk, Gurugram, Haryana – 122001"
+  },
+  "sohna chowk": {
+    "canonical_name": "Sohna Chowk",
+    "distinctive_name": "sohna",
+    "city": "Gurgaon",
+    "district": "Gurgaon",
+    "state": "Haryana",
+    "pincode": "122001",
+    "full_source_address": "35/151, Bara Bazar, Sohna Chowk, Gurugram, Haryana – 122001"
+  },
+  "onkar nagar a": {
+    "canonical_name": "Onkar Nagar A",
+    "distinctive_name": "onkar a",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110035",
+    "full_source_address": "2698 / 198, Onkar Nagar A, Tota Ram Bazar, Tri Nagar, Delhi – 110035"
+  },
+  "tota ram bazar": {
+    "canonical_name": "Tota Ram Bazar",
+    "distinctive_name": "tota ram",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110035",
+    "full_source_address": "2698 / 198, Onkar Nagar A, Tota Ram Bazar, Tri Nagar, Delhi – 110035"
+  },
+  "tri nagar": {
+    "canonical_name": "Tri Nagar",
+    "distinctive_name": "tri",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110035",
+    "full_source_address": "2698 / 198, Onkar Nagar A, Tota Ram Bazar, Tri Nagar, Delhi – 110035"
+  },
+  "main ring road": {
+    "canonical_name": "Main Ring Road",
+    "distinctive_name": "main",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110049",
+    "full_source_address": "Block D, D-15; LG-4, 5, 6, Main Ring Road, South Extension II, New Delhi, Delhi – 110049"
+  },
+  "chandni chowk": {
+    "canonical_name": "Chandni Chowk",
+    "distinctive_name": "chandni",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110006",
+    "full_source_address": "Building No. 1153, 2nd Floor, Shop No. 6-7, Kucha Mahajani, Chandni Chowk, Delhi – 110006"
+  },
+  "rk tower": {
+    "canonical_name": "RK Tower",
+    "distinctive_name": "rk",
+    "city": "Ghaziabad",
+    "district": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "pincode": "201010",
+    "full_source_address": "RK Tower, Vaishali Sector 4, Ghaziabad, Uttar Pradesh – 201010"
+  },
+  "block no. 23 chawk": {
+    "canonical_name": "Block No. 23 Chawk",
+    "distinctive_name": "no. 23 chawk",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110091",
+    "full_source_address": "Shop No. 23/484, Block No. 23 Chawk, Central Market, Trilokpuri, Mayur Vihar, Delhi – 110091"
+  },
+  "mayur vihar": {
+    "canonical_name": "Mayur Vihar",
+    "distinctive_name": "mayur",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110091",
+    "full_source_address": "Shop No. 23/484, Block No. 23 Chawk, Central Market, Trilokpuri, Mayur Vihar, Delhi – 110091"
+  },
+  "sarafa market": {
+    "canonical_name": "Sarafa Market",
+    "distinctive_name": "sarafa",
+    "city": "New Delhi",
+    "district": "Delhi",
+    "state": "Delhi",
+    "pincode": "110053",
+    "full_source_address": "Shop No. 1, D-48, Sarafa Market, Zharu Wali Gali, New Seelampur, Shahdara, Delhi – 110053"
+  },
+  "chaudhary market gejha": {
+    "canonical_name": "Chaudhary Market Gejha",
+    "distinctive_name": "chaudhary gejha",
+    "city": "Noida",
+    "district": "Gautam Buddha Nagar",
+    "state": "Uttar Pradesh",
+    "pincode": "201304",
+    "full_source_address": "Chaudhary Market Gejha, Main Road Gejha, Sector 93, Noida, Uttar Pradesh – 201304"
+  },
+  "main road gejha": {
+    "canonical_name": "Main Road Gejha",
+    "distinctive_name": "gejha",
+    "city": "Noida",
+    "district": "Gautam Buddha Nagar",
+    "state": "Uttar Pradesh",
+    "pincode": "201304",
+    "full_source_address": "Chaudhary Market Gejha, Main Road Gejha, Sector 93, Noida, Uttar Pradesh – 201304"
+  },
+  "sector-10 market": {
+    "canonical_name": "Sector-10 Market",
+    "distinctive_name": "sector-10",
+    "city": "Faridabad",
+    "district": "Faridabad",
+    "state": "Haryana",
+    "pincode": "121006",
+    "full_source_address": "Shop No. 930, Sector-10 Market, Sector-7/10 Dividing Road, Faridabad Sector 10, Faridabad, Haryana – 121006"
+  },
+  "sector-7/10 dividing road": {
+    "canonical_name": "Sector-7/10 Dividing Road",
+    "distinctive_name": "sector-7/10 dividing",
+    "city": "Faridabad",
+    "district": "Faridabad",
+    "state": "Haryana",
+    "pincode": "121006",
+    "full_source_address": "Shop No. 930, Sector-10 Market, Sector-7/10 Dividing Road, Faridabad Sector 10, Faridabad, Haryana – 121006"
+  },
+  "main pipeline road": {
+    "canonical_name": "Main Pipeline Road",
+    "distinctive_name": "main pipeline",
+    "city": "Ghaziabad",
+    "district": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "pincode": "201102",
+    "full_source_address": "Band Fatak, Main Pipeline Road, Ram Vihar, Loni, Ghaziabad, Uttar Pradesh – 201102"
+  },
+  "ram vihar": {
+    "canonical_name": "Ram Vihar",
+    "distinctive_name": "ram",
+    "city": "Ghaziabad",
+    "district": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "pincode": "201102",
+    "full_source_address": "Band Fatak, Main Pipeline Road, Ram Vihar, Loni, Ghaziabad, Uttar Pradesh – 201102"
+  },
+  "5th main road": {
+    "canonical_name": "5th Main Road",
+    "distinctive_name": "5th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560040",
+    "full_source_address": "Ganna Hights No, 363/13, Opposite to Mc Donalds, 5th Main Road, Vijayanagar, Bangalore-560040, Karnataka"
+  },
+  "12th cross road": {
+    "canonical_name": "12th Cross Road",
+    "distinctive_name": "12th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560029",
+    "full_source_address": "#144, Bhagyalakshmi Gold Palace, 16th Main, 12th Cross Road, Tavarekere Main Road, BTM Layout 1st Stage, Bangalore-560029, Karnataka"
+  },
+  "tavarekere main road": {
+    "canonical_name": "Tavarekere Main Road",
+    "distinctive_name": "tavarekere",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560029",
+    "full_source_address": "#144, Bhagyalakshmi Gold Palace, 16th Main, 12th Cross Road, Tavarekere Main Road, BTM Layout 1st Stage, Bangalore-560029, Karnataka"
+  },
+  "btm layout 1st stage": {
+    "canonical_name": "BTM Layout 1st Stage",
+    "distinctive_name": "btm 1st stage",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560029",
+    "full_source_address": "#144, Bhagyalakshmi Gold Palace, 16th Main, 12th Cross Road, Tavarekere Main Road, BTM Layout 1st Stage, Bangalore-560029, Karnataka"
+  },
+  "sahakara nagar": {
+    "canonical_name": "Sahakara Nagar",
+    "distinctive_name": "sahakara",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560092",
+    "full_source_address": "Opposite Allensolly, Kodigehalli Main Road, Sahakara Nagar, Bangalore-560092, Karnataka"
+  },
+  "diamond arcade": {
+    "canonical_name": "Diamond Arcade",
+    "distinctive_name": "diamond",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011",
+    "full_source_address": "#21, Diamond Arcade, Opp. Airtel, Below Me and Moms, 11th Main Road, 32nd D Cross, Jayanagar 4th Block East, Bangalore-560011, Karnataka"
+  },
+  "11th main road": {
+    "canonical_name": "11th Main Road",
+    "distinctive_name": "11th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011",
+    "full_source_address": "#21, Diamond Arcade, Opp. Airtel, Below Me and Moms, 11th Main Road, 32nd D Cross, Jayanagar 4th Block East, Bangalore-560011, Karnataka"
+  },
+  "corner shop": {
+    "canonical_name": "Corner Shop",
+    "distinctive_name": "corner",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560010",
+    "full_source_address": "No.335, Opposite New Sagar Fast Food, Corner Shop, Rajajinagar 1st N Block, Rajajinagar, Bangalore-560010, Karnataka"
+  },
+  "rajajinagar 1st n block": {
+    "canonical_name": "Rajajinagar 1st N Block",
+    "distinctive_name": "rajajinagar 1st n",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560010",
+    "full_source_address": "No.335, Opposite New Sagar Fast Food, Corner Shop, Rajajinagar 1st N Block, Rajajinagar, Bangalore-560010, Karnataka"
+  },
+  "k kamaraja road": {
+    "canonical_name": "K Kamaraja Road",
+    "distinctive_name": "k kamaraja",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560042",
+    "full_source_address": "Shop No B 13, Commercial Plaza, Bengaluru, Opposite to Ibrahim Sahib Street, K Kamaraja Road, Kamaraj Road, Bangalore-560042, Karnataka"
+  },
+  "8th main road": {
+    "canonical_name": "8th Main Road",
+    "distinctive_name": "8th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011",
+    "full_source_address": "No.122/C, Near NMKRV Womens College, 8th Main Road, Jayanagar 3rd Block East, Bangalore-560011, Karnataka"
+  },
+  "jayanagar 3rd block east": {
+    "canonical_name": "Jayanagar 3rd Block East",
+    "distinctive_name": "jayanagar 3rd east",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011",
+    "full_source_address": "No.122/C, Near NMKRV Womens College, 8th Main Road, Jayanagar 3rd Block East, Bangalore-560011, Karnataka"
+  },
+  "vayu vihar & kfc": {
+    "canonical_name": "Vayu Vihar & KFC",
+    "distinctive_name": "vayu & kfc",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560084",
+    "full_source_address": "No.4M/405, Near Jal Vayu Vihar & KFC, 4th Main, Kammanahalli, Bangalore-560084, Karnataka"
+  },
+  "33rd cross road": {
+    "canonical_name": "33rd Cross Road",
+    "distinctive_name": "33rd",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011",
+    "full_source_address": "No.53, 33rd Cross Road, Jayanagar 4th Block, Bangalore-560011, Karnataka"
+  },
+  "kumble circle": {
+    "canonical_name": "Kumble Circle",
+    "distinctive_name": "kumble",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560001",
+    "full_source_address": "No. 98, 1st Floor, LIC Building, Near Anil Kumble Circle, M G Road, M G Road, Bangalore-560001, Karnataka"
+  },
+  "m g road": {
+    "canonical_name": "M G Road",
+    "distinctive_name": "m g",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560001",
+    "full_source_address": "No. 98, 1st Floor, LIC Building, Near Anil Kumble Circle, M G Road, M G Road, Bangalore-560001, Karnataka"
+  },
+  "whitefield main road": {
+    "canonical_name": "Whitefield Main Road",
+    "distinctive_name": "whitefield",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560067",
+    "full_source_address": "No.300, Near HDFC Bank, Whitefield Main Road, Whitefield, Bangalore-560067, Karnataka"
+  },
+  "gmn arcade": {
+    "canonical_name": "GMN Arcade",
+    "distinctive_name": "gmn",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560010",
+    "full_source_address": "No. 444, Ground Floor, GMN Arcade, Near Diacon Hospital, Opposite Navrathnan Jewellery, 20th Main Road, Rajajinagar 1st Block, Bangalore-560010, Karnataka"
+  },
+  "20th main road": {
+    "canonical_name": "20th Main Road",
+    "distinctive_name": "20th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560010",
+    "full_source_address": "No. 444, Ground Floor, GMN Arcade, Near Diacon Hospital, Opposite Navrathnan Jewellery, 20th Main Road, Rajajinagar 1st Block, Bangalore-560010, Karnataka"
+  },
+  "rajajinagar 1st block": {
+    "canonical_name": "Rajajinagar 1st Block",
+    "distinctive_name": "rajajinagar 1st",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560010",
+    "full_source_address": "No. 444, Ground Floor, GMN Arcade, Near Diacon Hospital, Opposite Navrathnan Jewellery, 20th Main Road, Rajajinagar 1st Block, Bangalore-560010, Karnataka"
+  },
+  "jawaharlal nehru road": {
+    "canonical_name": "Jawaharlal Nehru Road",
+    "distinctive_name": "jawaharlal nehru",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560098",
+    "full_source_address": "No.32/33, Near Ganesha Temple, Jawaharlal Nehru Road, Beml Layout-Rajarajeshwari Nagar, Bangalore-560098, Karnataka"
+  },
+  "beml layout-rajarajeshwari nagar": {
+    "canonical_name": "Beml Layout-Rajarajeshwari Nagar",
+    "distinctive_name": "beml layout-rajarajeshwari",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560098",
+    "full_source_address": "No.32/33, Near Ganesha Temple, Jawaharlal Nehru Road, Beml Layout-Rajarajeshwari Nagar, Bangalore-560098, Karnataka"
+  },
+  "5th block": {
+    "canonical_name": "5th Block",
+    "distinctive_name": "5th",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560095",
+    "full_source_address": "No.76, Near Jyothi Nivas College, 5th Block, Koramangala, Bangalore-560095, Karnataka"
+  },
+  "outer ring road": {
+    "canonical_name": "Outer Ring Road",
+    "distinctive_name": "outer",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560037",
+    "full_source_address": "No. 18, Opposite Kalamandir, Outer Ring Road, Marathahalli, Bangalore-560037, Karnataka"
+  },
+  "duger building mi road": {
+    "canonical_name": "Duger Building Mi Road",
+    "distinctive_name": "duger mi",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302020",
+    "full_source_address": "Plot No 69/400, Duger Building Mi Road, Near V T Road, Madhyam Marg, Mansarovar, Jaipur-302020, Rajasthan"
+  },
+  "shivraj niketan colony": {
+    "canonical_name": "Shivraj Niketan Colony",
+    "distinctive_name": "shivraj",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302021",
+    "full_source_address": "Shop No- 19, PSJ JEWELLERS JAIPUR, Shivraj Niketan Colony, Near SBI BANK, Goutam Marg /Hanuman Nagar, Vaishali Nagar, Jaipur-302021, Rajasthan"
+  },
+  "goutam marg /hanuman nagar": {
+    "canonical_name": "Goutam Marg /Hanuman Nagar",
+    "distinctive_name": "goutam /hanuman",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302021",
+    "full_source_address": "Shop No- 19, PSJ JEWELLERS JAIPUR, Shivraj Niketan Colony, Near SBI BANK, Goutam Marg /Hanuman Nagar, Vaishali Nagar, Jaipur-302021, Rajasthan"
+  },
+  "vaishali nagar": {
+    "canonical_name": "Vaishali Nagar",
+    "distinctive_name": "vaishali",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302021",
+    "full_source_address": "Shop No- 19, PSJ JEWELLERS JAIPUR, Shivraj Niketan Colony, Near SBI BANK, Goutam Marg /Hanuman Nagar, Vaishali Nagar, Jaipur-302021, Rajasthan"
+  },
+  "janpath road": {
+    "canonical_name": "Janpath Road",
+    "distinctive_name": "janpath",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302019",
+    "full_source_address": "PLot No -D-125, PSJ JEWELLERS, Janpath Road, Shyamnagar, Jaipur-302019, Rajasthan"
+  },
+  "nagar police station": {
+    "canonical_name": "Nagar Police Station",
+    "distinctive_name": "police",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302004",
+    "full_source_address": "Shop No-219, Near Jawahar Nagar Police Station, Shanti Path, Raja Park, Jaipur-302004, Rajasthan"
+  },
+  "baapu nagar": {
+    "canonical_name": "BAAPU NAGAR",
+    "distinctive_name": "baapu",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302001",
+    "full_source_address": "SB 114, BAAPU NAGAR, NEHRU PLACE, Tonk Road Lines, Tonk Road, Jaipur-302001, Rajasthan"
+  },
+  "tonk road lines": {
+    "canonical_name": "Tonk Road Lines",
+    "distinctive_name": "tonk lines",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302001",
+    "full_source_address": "SB 114, BAAPU NAGAR, NEHRU PLACE, Tonk Road Lines, Tonk Road, Jaipur-302001, Rajasthan"
+  },
+  "tonk road": {
+    "canonical_name": "Tonk Road",
+    "distinctive_name": "tonk",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302001",
+    "full_source_address": "SB 114, BAAPU NAGAR, NEHRU PLACE, Tonk Road Lines, Tonk Road, Jaipur-302001, Rajasthan"
+  },
+  "barkat nagar": {
+    "canonical_name": "Barkat Nagar",
+    "distinctive_name": "barkat",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302015",
+    "full_source_address": "Shop No 265, Opp Dausa Kirana Store, Barkat Ngr, Barkat Nagar, Tonk Phatak, Jaipur-302015, Rajasthan"
+  },
+  "narayan singh circle": {
+    "canonical_name": "Narayan Singh Circle",
+    "distinctive_name": "narayan singh",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302015",
+    "full_source_address": "F-113, City Plus Mall, Narayan Singh Circle, Tonk Road, Jaipur-302015, Rajasthan"
+  },
+  "moti nagar": {
+    "canonical_name": "Moti Nagar",
+    "distinctive_name": "moti",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302019",
+    "full_source_address": "Shop No6, Moti Nagar, Gujar Ki Thadi, Shyamnagar, Jaipur-302019, Rajasthan"
+  },
+  "advik tower": {
+    "canonical_name": "Advik Tower",
+    "distinctive_name": "advik",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302020",
+    "full_source_address": "Plot No 14, Advik Tower, Khandelwal Dhaba, Patrakar Road, Mansarovar, Jaipur-302020, Rajasthan"
+  },
+  "patrakar road": {
+    "canonical_name": "Patrakar Road",
+    "distinctive_name": "patrakar",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302020",
+    "full_source_address": "Plot No 14, Advik Tower, Khandelwal Dhaba, Patrakar Road, Mansarovar, Jaipur-302020, Rajasthan"
+  },
+  "amrapali circle": {
+    "canonical_name": "Amrapali Circle",
+    "distinctive_name": "amrapali",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302021",
+    "full_source_address": "Shop No E-801, Behind Gupta Store, Amrapali Circle, Vaishali Nagar, Jaipur-302021, Rajasthan"
+  },
+  "arya samaj road": {
+    "canonical_name": "Arya Samaj Road",
+    "distinctive_name": "arya samaj",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302004",
+    "full_source_address": "Shop No. 215-216, Alankritta Jewels, Opposite Hanuman Dhaba, Arya Samaj Road, Raja Park, Jaipur-302004, Rajasthan"
+  },
+  "tagore nagar": {
+    "canonical_name": "Tagore Nagar",
+    "distinctive_name": "tagore",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302021",
+    "full_source_address": "Plot No 98, Tagore Nagar, Ajmer Road, Chitrakoot Marg, Ajmer Rd, Vaishali Nagar, Jaipur-302021, Rajasthan"
+  },
+  "ajmer road": {
+    "canonical_name": "Ajmer Road",
+    "distinctive_name": "ajmer",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302021",
+    "full_source_address": "Plot No 98, Tagore Nagar, Ajmer Road, Chitrakoot Marg, Ajmer Rd, Vaishali Nagar, Jaipur-302021, Rajasthan"
+  },
+  "ajmer rd": {
+    "canonical_name": "Ajmer Rd",
+    "distinctive_name": "ajmer",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302021",
+    "full_source_address": "Plot No 98, Tagore Nagar, Ajmer Road, Chitrakoot Marg, Ajmer Rd, Vaishali Nagar, Jaipur-302021, Rajasthan"
+  },
+  "amer road": {
+    "canonical_name": "Amer Road",
+    "distinctive_name": "amer",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302002",
+    "full_source_address": "47 Dev Art's N Jewels, Near Hotel Club Mahendra, Hotel Club Mahendra, Nagar Nigam Colony, Amer Road, Jaipur-302002, Rajasthan"
+  },
+  "chandpole bazar": {
+    "canonical_name": "Chandpole Bazar",
+    "distinctive_name": "chandpole",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302001",
+    "full_source_address": "Shop No 1304/2, Baba Harishchandra Marg, Jhalaniyo Ka Rasta, Chandpole Bazar, Jaipur-302001, Rajasthan"
+  },
+  "barkat nagar road": {
+    "canonical_name": "Barkat Nagar Road",
+    "distinctive_name": "barkat",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302015",
+    "full_source_address": "Shop no. 246, 247, Barkat Nagar Road, Opposite Dausa Kirana Store, Main Market, Barkat Nagar, Tonk Phatak, Jaipur - 302015, Rajasthan"
+  },
+  "main market": {
+    "canonical_name": "Main Market",
+    "distinctive_name": "main",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302015",
+    "full_source_address": "Shop no. 246, 247, Barkat Nagar Road, Opposite Dausa Kirana Store, Main Market, Barkat Nagar, Tonk Phatak, Jaipur - 302015, Rajasthan"
+  },
+  "johari bazar road": {
+    "canonical_name": "Johari Bazar Road",
+    "distinctive_name": "johari",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302003",
+    "full_source_address": "239-240, Johari Bazar Road, Badi Choupad, Pink City, Jaipur - 302003, Rajasthan"
+  },
+  "shyam nagar": {
+    "canonical_name": "Shyam Nagar",
+    "distinctive_name": "shyam",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "",
+    "full_source_address": "6, Moti Nagar, Gujar Ki Thadi, Shyam Nagar, Jaipur, Rajasthan"
+  },
+  "gandhi path road west": {
+    "canonical_name": "Gandhi Path Road West",
+    "distinctive_name": "gandhi west",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302021",
+    "full_source_address": "LG 103, Mall Of Jaipur, Gandhi Path Road West, Near By PVR, Vaishali Nagar, Jaipur - 302021, Rajasthan"
+  },
+  "johri bazar": {
+    "canonical_name": "Johri Bazar",
+    "distinctive_name": "johri",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302003",
+    "full_source_address": "LMB Hotel, Johri Bazar, Jaipur - 302003, Rajasthan"
+  },
+  "vivek vihar mode": {
+    "canonical_name": "Vivek Vihar Mode",
+    "distinctive_name": "vivek mode",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "",
+    "full_source_address": "Opposite Vivek Vihar Mode, Model Town, Jagatpura Getor, Jaipur, Rajasthan"
+  },
+  "malviya nagar": {
+    "canonical_name": "Malviya Nagar",
+    "distinctive_name": "malviya",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302017",
+    "full_source_address": "1/317, Main Market, Malviya Nagar, Jaipur - 302017, Rajasthan"
+  },
+  "mirza ismail road": {
+    "canonical_name": "Mirza Ismail Road",
+    "distinctive_name": "mirza ismail",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "",
+    "full_source_address": "374, Mirza Ismail Road, Near Ajmeri Gate, Pink City, Jaipur, Rajasthan"
+  },
+  "gate": {
+    "canonical_name": "Gate",
+    "distinctive_name": "gate",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "",
+    "full_source_address": "374, Mirza Ismail Road, Near Ajmeri Gate, Pink City, Jaipur, Rajasthan"
+  },
+  "nahargarh road": {
+    "canonical_name": "Nahargarh Road",
+    "distinctive_name": "nahargarh",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "",
+    "full_source_address": "Shop No. 328, Nahargarh Road, Opposite Maheshwari Tea Company, Chandpole Bazar, Chandpole, Pink City, Jaipur, Rajasthan"
+  },
+  "laxmi nagar": {
+    "canonical_name": "Laxmi Nagar",
+    "distinctive_name": "laxmi",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "",
+    "full_source_address": "Backside Mangori Walon Ki Bagichi, Laxmi Nagar, Brahampuri, Jaipur, Rajasthan"
+  },
+  "tamanna tower": {
+    "canonical_name": "Tamanna Tower",
+    "distinctive_name": "tamanna",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "",
+    "full_source_address": "Shop No. 3, Opposite Tamanna Tower, Amrapali Marg, Vaishali Nagar, Jaipur, Rajasthan"
+  },
+  "bhiwandi - 421302 (near union bank and prashant corner)": {
+    "canonical_name": "Bhiwandi - 421302 (Near Union Bank and Prashant Corner)",
+    "distinctive_name": "bhiwandi - 421302 (near union bank and prashant corner)",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "421302",
+    "full_source_address": "G Wing, Royal City, Mumbai Nashik Highway, Mankoli, Bhiwandi - 421302 (Near Union Bank and Prashant Corner)"
+  },
+  "gheladeviji chowk": {
+    "canonical_name": "Gheladeviji Chowk",
+    "distinctive_name": "gheladeviji",
+    "city": "Thane",
+    "district": "Thane",
+    "state": "Maharashtra",
+    "pincode": "421301",
+    "full_source_address": "Shop No 1, Parshwanath Apartment, Gheladeviji Chowk, Bazar Peth, Kalyan West, Kalyan - 421301"
+  },
+  "bazar peth": {
+    "canonical_name": "Bazar Peth",
+    "distinctive_name": "peth",
+    "city": "Thane",
+    "district": "Thane",
+    "state": "Maharashtra",
+    "pincode": "421301",
+    "full_source_address": "Shop No 1, Parshwanath Apartment, Gheladeviji Chowk, Bazar Peth, Kalyan West, Kalyan - 421301"
+  },
+  "mohammad ali chowk": {
+    "canonical_name": "Mohammad Ali Chowk",
+    "distinctive_name": "mohammad ali",
+    "city": "Thane",
+    "district": "Thane",
+    "state": "Maharashtra",
+    "pincode": "421301",
+    "full_source_address": "Opposite DCP Office, Mohammad Ali Chowk, Station Road, Kalyan West, Kalyan - 421301"
+  },
+  "mahavir prabhu chowk": {
+    "canonical_name": "Mahavir Prabhu Chowk",
+    "distinctive_name": "mahavir prabhu",
+    "city": "Thane",
+    "district": "Thane",
+    "state": "Maharashtra",
+    "pincode": "421301",
+    "full_source_address": "Shop No 2/3, Mohankheda Avenue, Mahavir Prabhu Chowk, Near Subhedar Wada, Kalyan West, Kalyan - 421301"
+  },
+  "tower no 2": {
+    "canonical_name": "Tower No 2",
+    "distinctive_name": "no 2",
+    "city": "Thane",
+    "district": "Thane",
+    "state": "Maharashtra",
+    "pincode": "421301",
+    "full_source_address": "Tower No 2, Mahavir Nagari, Khadakpada, Vasant Valley Road, Kalyan West, Kalyan - 421301 (Near Gokul Nagari)"
+  },
+  "vasant valley road": {
+    "canonical_name": "Vasant Valley Road",
+    "distinctive_name": "vasant valley",
+    "city": "Thane",
+    "district": "Thane",
+    "state": "Maharashtra",
+    "pincode": "421301",
+    "full_source_address": "Tower No 2, Mahavir Nagari, Khadakpada, Vasant Valley Road, Kalyan West, Kalyan - 421301 (Near Gokul Nagari)"
+  },
+  "s v road": {
+    "canonical_name": "S V Road",
+    "distinctive_name": "s v",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400092",
+    "full_source_address": "Opposite Moksh Plaza, Next to Indraprasth Shopping Center, S V Road, Borivali West, Mumbai - 400092"
+  },
+  "sainath road": {
+    "canonical_name": "Sainath Road",
+    "distinctive_name": "sainath",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400064",
+    "full_source_address": "Vasant Plaza, Below Kasturba Talkies, Sainath Road, Malad West, Mumbai - 400064"
+  },
+  "subash nagar": {
+    "canonical_name": "Subash Nagar",
+    "distinctive_name": "subash",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400093",
+    "full_source_address": "Flora Deck Plaza, Subash Nagar, Opposite ICICI Bank, Andheri East, Mumbai - 400093"
+  },
+  "govandi police station road": {
+    "canonical_name": "Govandi Police Station Road",
+    "distinctive_name": "govandi police",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400071",
+    "full_source_address": "Govandi Police Station Road, N G Acharya Marg, Chembur East, Mumbai - 400071"
+  },
+  "sarova complex": {
+    "canonical_name": "Sarova Complex",
+    "distinctive_name": "sarova",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400101",
+    "full_source_address": "Sarova Complex, Samta Nagar Road, Near Hanuman Mandir, Kandivali East, Mumbai - 400101"
+  },
+  "samta nagar road": {
+    "canonical_name": "Samta Nagar Road",
+    "distinctive_name": "samta",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400101",
+    "full_source_address": "Sarova Complex, Samta Nagar Road, Near Hanuman Mandir, Kandivali East, Mumbai - 400101"
+  },
+  "ram mandir road": {
+    "canonical_name": "Ram Mandir Road",
+    "distinctive_name": "ram",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400092",
+    "full_source_address": "Shop No. 3, Ramtirth, Ram Mandir Road, Babhai Naka, Near Hanuman Mandir, Borivali West, Mumbai - 400092"
+  },
+  "jawahar nagar / prem nagar": {
+    "canonical_name": "Jawahar Nagar / Prem Nagar",
+    "distinctive_name": "jawahar / prem",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400104",
+    "full_source_address": "Opposite Bharat Hotel, Jawahar Nagar / Prem Nagar, Goregaon West, Mumbai - 400104"
+  },
+  "veera desai road": {
+    "canonical_name": "Veera Desai Road",
+    "distinctive_name": "veera desai",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400053",
+    "full_source_address": "Sainath Shopping Center, Veera Desai Road, Opposite Court Yard Restaurant, Andheri West, Mumbai - 400053"
+  },
+  "prem nagar": {
+    "canonical_name": "Prem Nagar",
+    "distinctive_name": "prem",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400060",
+    "full_source_address": "Near Fish Market Road, Opposite Janashakti Police Chowki, Saraswati Baug, Prem Nagar, Jogeshwari East, Mumbai - 400060"
+  },
+  "j p road": {
+    "canonical_name": "J P Road",
+    "distinctive_name": "j p",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400058",
+    "full_source_address": "Shop No 1, 18, Kanku Mansion, Near Ram Mandir, J P Road, Andheri West, Mumbai - 400058"
+  },
+  "andheri west link road": {
+    "canonical_name": "Andheri West Link Road",
+    "distinctive_name": "andheri west",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400053",
+    "full_source_address": "Opposite Laxmi Industrial Estate, Andheri West Link Road, Andheri West, Mumbai - 400053"
+  },
+  "kuber complex": {
+    "canonical_name": "Kuber Complex",
+    "distinctive_name": "kuber",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400053",
+    "full_source_address": "Kuber Complex, Ground Floor, Opposite Sab TV & Laxmi Industries, Link Road, Andheri West, Mumbai - 400053"
+  },
+  "chandavarkar road": {
+    "canonical_name": "Chandavarkar Road",
+    "distinctive_name": "chandavarkar",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400092",
+    "full_source_address": "Kaveri Heritage, Chandavarkar Road, Opposite Achija Restaurant (Diagonally), Borivali West, Mumbai - 400092"
+  },
+  "jerbai wadia road": {
+    "canonical_name": "Jerbai Wadia Road",
+    "distinctive_name": "jerbai wadia",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400012",
+    "full_source_address": "Shop No. 8, Deep Residency, Jerbai Wadia Road, Near Tata Hospital, Bhoi Wada, Parel, Mumbai - 400012"
+  },
+  "behram baug main road": {
+    "canonical_name": "Behram Baug Main Road",
+    "distinctive_name": "behram baug",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400102",
+    "full_source_address": "Shop No. 7, Jiva Chawl, Behram Baug Main Road, Opposite Mahatma Gandhi School, Behram Baug, Jogeshwari West, Mumbai - 400102"
+  },
+  "129 j p road": {
+    "canonical_name": "129 J P Road",
+    "distinctive_name": "129 j p",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400058",
+    "full_source_address": "Sita Niwas, Goldsmith Premises Gala No. 20, 129 J P Road, Opposite Bombay Bazar, Andheri West, Mumbai - 400058"
+  },
+  "bombay bazar": {
+    "canonical_name": "Bombay Bazar",
+    "distinctive_name": "bombay",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400058",
+    "full_source_address": "Sita Niwas, Goldsmith Premises Gala No. 20, 129 J P Road, Opposite Bombay Bazar, Andheri West, Mumbai - 400058"
+  },
+  "mata mandir road": {
+    "canonical_name": "Mata Mandir Road",
+    "distinctive_name": "mata",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "full_source_address": "Plot No.252, Indrayan, Opposite SVC Bank, Mata Mandir Road, Dharampeth, Nagpur-440010, Maharashtra"
+  },
+  "whc road": {
+    "canonical_name": "WHC Road",
+    "distinctive_name": "whc",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "full_source_address": "Plot No 67, Opposite Raut Hospital, WHC Road, Shankar Nagar, Nagpur-440010, Maharashtra"
+  },
+  "west high court road": {
+    "canonical_name": "West High Court Road",
+    "distinctive_name": "west high",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "full_source_address": "West High Court Road, Dharampeth, Nagpur-440010, Maharashtra"
+  },
+  "sarafa bazaar": {
+    "canonical_name": "Sarafa Bazaar",
+    "distinctive_name": "sarafa",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440002",
+    "full_source_address": "Bhaiyaji Bhau Ganpatrao Ramchandra Walokar, Sarafa Bazaar, Itwari, Nagpur-440002, Maharashtra"
+  },
+  "bhamti parsodi ring road": {
+    "canonical_name": "Bhamti Parsodi Ring Road",
+    "distinctive_name": "bhamti parsodi",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440022",
+    "full_source_address": "Shop No 1 and 2, Jyeshtha Apartment, Nageshwar Mandir Square, Bhamti Parsodi Ring Road, Trimurti Nagar, Nagpur-440022, Maharashtra"
+  },
+  "trimurti nagar": {
+    "canonical_name": "Trimurti Nagar",
+    "distinctive_name": "trimurti",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440022",
+    "full_source_address": "Shop No 1 and 2, Jyeshtha Apartment, Nageshwar Mandir Square, Bhamti Parsodi Ring Road, Trimurti Nagar, Nagpur-440022, Maharashtra"
+  },
+  "rasta chowk nagpur": {
+    "canonical_name": "Rasta Chowk Nagpur",
+    "distinctive_name": "rasta nagpur",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440022",
+    "full_source_address": "Bhandarkar Jewellers, Shop No. 1 Sneha Appartment, Near Aath Rasta Chowk Nagpur, WHC Road, Laxmi Nagar, Nagpur-440022, Maharashtra"
+  },
+  "ambazari road": {
+    "canonical_name": "Ambazari Road",
+    "distinctive_name": "ambazari",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "full_source_address": "Rachana Galaxy, Plot No. 10, Unit No. 001, Upper GF and First Floor, Ambazari Road, Dharampet, Opp. Gandhi Nagar, Nagpur-440010, Maharashtra"
+  },
+  "gandhi nagar": {
+    "canonical_name": "Gandhi Nagar",
+    "distinctive_name": "gandhi",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "full_source_address": "Rachana Galaxy, Plot No. 10, Unit No. 001, Upper GF and First Floor, Ambazari Road, Dharampet, Opp. Gandhi Nagar, Nagpur-440010, Maharashtra"
+  },
+  "medical chowk": {
+    "canonical_name": "Medical Chowk",
+    "distinctive_name": "medical",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440003",
+    "full_source_address": "Shop 05, Upper Ground Floor, VR Nagpur Municipal House 2, Medical Chowk, Rambagh, Nagpur-440003, Maharashtra"
+  },
+  "arcade no. 01": {
+    "canonical_name": "Arcade No. 01",
+    "distinctive_name": "no. 01",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440018",
+    "full_source_address": "Arcade No. 01, Shop No. 3 & 4, Near Anandam World City, Ganeshpeth, Nagpur-440018, Maharashtra"
+  },
+  "vazalwar colony": {
+    "canonical_name": "Vazalwar Colony",
+    "distinctive_name": "vazalwar",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "full_source_address": "Vazalwar Colony, Opposite Dharampeth School, Next Aditya Hotel, Ambazari Road, Traffic Park Road, Dharampeth, Nagpur-440010, Maharashtra"
+  },
+  "traffic park road": {
+    "canonical_name": "Traffic Park Road",
+    "distinctive_name": "traffic",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "full_source_address": "Vazalwar Colony, Opposite Dharampeth School, Next Aditya Hotel, Ambazari Road, Traffic Park Road, Dharampeth, Nagpur-440010, Maharashtra"
+  },
+  "tanga stand chowk": {
+    "canonical_name": "Tanga Stand Chowk",
+    "distinctive_name": "tanga stand",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440002",
+    "full_source_address": "Pugalia Towers, Tanga Stand Chowk, Sarafa Bazar, Itwari, Nagpur-440002, Maharashtra"
+  },
+  "sarafa bazar": {
+    "canonical_name": "Sarafa Bazar",
+    "distinctive_name": "sarafa",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440002",
+    "full_source_address": "Pugalia Towers, Tanga Stand Chowk, Sarafa Bazar, Itwari, Nagpur-440002, Maharashtra"
+  },
+  "sadar bazar": {
+    "canonical_name": "Sadar Bazar",
+    "distinctive_name": "sadar",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440001",
+    "full_source_address": "447, Dhariwal Jewellers, Opposite Sadar Police Chowki, Golchha Marg, Sadar Bazar, Nagpur-440001, Maharashtra"
+  },
+  "hingana road": {
+    "canonical_name": "Hingana Road",
+    "distinctive_name": "hingana",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440016",
+    "full_source_address": "Dhomne Jewellers, Electronic Zone Chouk, Hingana Road, MIDC, Nagpur-440016, Maharashtra"
+  },
+  "bazar and threenal chowk": {
+    "canonical_name": "Bazar and Threenal Chowk",
+    "distinctive_name": "and threenal",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440002",
+    "full_source_address": "Near Itwari Bazar and Threenal Chowk, Old Bhandara Road and Bohara Majjid Road, Itwari, Nagpur-440002, Maharashtra"
+  },
+  "old bhandara road and bohara majjid road": {
+    "canonical_name": "Old Bhandara Road and Bohara Majjid Road",
+    "distinctive_name": "old bhandara and bohara majjid",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440002",
+    "full_source_address": "Near Itwari Bazar and Threenal Chowk, Old Bhandara Road and Bohara Majjid Road, Itwari, Nagpur-440002, Maharashtra"
+  },
+  "vaibhav nagar": {
+    "canonical_name": "Vaibhav Nagar",
+    "distinctive_name": "vaibhav",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440034",
+    "full_source_address": "Plot No-116, Vaibhav Nagar, Near GM Rokade Jewellers, Narsala Road, Dighori, Nagpur-440034, Maharashtra"
+  },
+  "narsala road": {
+    "canonical_name": "Narsala Road",
+    "distinctive_name": "narsala",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440034",
+    "full_source_address": "Plot No-116, Vaibhav Nagar, Near GM Rokade Jewellers, Narsala Road, Dighori, Nagpur-440034, Maharashtra"
+  },
+  "block no 1": {
+    "canonical_name": "Block No 1",
+    "distinctive_name": "no 1",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "full_source_address": "Municipal House, Block No 1, Ground Floor Chawhan Building, Plot No 1, Dharampeth, West High Court Road, Yashodham, Nagpur-440010, Maharashtra"
+  },
+  "prayag enclave": {
+    "canonical_name": "Prayag Enclave",
+    "distinctive_name": "prayag",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "full_source_address": "Plot No. 17, Ground Floor, Prayag Enclave, Shankar Nagar, Nagpur-440010, Maharashtra"
+  },
+  "dr ambedkar road": {
+    "canonical_name": "Dr Ambedkar Road",
+    "distinctive_name": "dr ambedkar",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440017",
+    "full_source_address": "Opposite Maharashtra Emporium, Dr Ambedkar Road, Kashmiri Galli, Indora Chowk, Kamal Chowk, Nagpur-440017, Maharashtra"
+  },
+  "indora chowk": {
+    "canonical_name": "Indora Chowk",
+    "distinctive_name": "indora",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440017",
+    "full_source_address": "Opposite Maharashtra Emporium, Dr Ambedkar Road, Kashmiri Galli, Indora Chowk, Kamal Chowk, Nagpur-440017, Maharashtra"
+  },
+  "kamal chowk": {
+    "canonical_name": "Kamal Chowk",
+    "distinctive_name": "kamal",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440017",
+    "full_source_address": "Opposite Maharashtra Emporium, Dr Ambedkar Road, Kashmiri Galli, Indora Chowk, Kamal Chowk, Nagpur-440017, Maharashtra"
+  },
+  "nara road": {
+    "canonical_name": "Nara Road",
+    "distinctive_name": "nara",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440014",
+    "full_source_address": "Shop No. 1, Kalagopi, Motha Indora, Opposite Ahuja Apartment, Nara Road, Jaripatka, Nagpur-440014, Maharashtra"
+  },
+  "abhyankar nagar": {
+    "canonical_name": "Abhyankar Nagar",
+    "distinctive_name": "abhyankar",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "full_source_address": "Plot No 2, Near Indian Oil Petrol Pump, Opposite Central Bank Of India, Abhyankar Nagar, Nagpur-440010, Maharashtra"
+  },
+  "shahid chowk": {
+    "canonical_name": "Shahid Chowk",
+    "distinctive_name": "shahid",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440002",
+    "full_source_address": "Sarafa Bazar, Shahid Chowk, Itwari, Nagpur-440002, Maharashtra"
+  },
+  "wockhardt heart hospital north ambazari road shankar nagar square": {
+    "canonical_name": "Wockhardt Heart Hospital North Ambazari Road Shankar Nagar Square",
+    "distinctive_name": "wockhardt heart north ambazari shankar",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440002",
+    "full_source_address": "Opposite Wockhardt Heart Hospital North Ambazari Road Shankar Nagar Square, Sarafa Bazar, Nikalas Mandir Road, Itwari, Nagpur-440002, Maharashtra"
+  },
+  "nikalas mandir road": {
+    "canonical_name": "Nikalas Mandir Road",
+    "distinctive_name": "nikalas",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440002",
+    "full_source_address": "Opposite Wockhardt Heart Hospital North Ambazari Road Shankar Nagar Square, Sarafa Bazar, Nikalas Mandir Road, Itwari, Nagpur-440002, Maharashtra"
+  },
+  "stand chowk": {
+    "canonical_name": "Stand Chowk",
+    "distinctive_name": "stand",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440002",
+    "full_source_address": "Near Tanga Stand Chowk, Sarafa Bazar Chowk, Itwari, Nagpur-440002, Maharashtra"
+  },
+  "sarafa bazar chowk": {
+    "canonical_name": "Sarafa Bazar Chowk",
+    "distinctive_name": "sarafa",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440002",
+    "full_source_address": "Near Tanga Stand Chowk, Sarafa Bazar Chowk, Itwari, Nagpur-440002, Maharashtra"
+  },
+  "omkar nagar besa road": {
+    "canonical_name": "Omkar Nagar Besa Road",
+    "distinctive_name": "omkar besa",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440027",
+    "full_source_address": "Plot No 1, Laxmi Jewellers, Near Omkar Nagar Square, Omkar Nagar Besa Road, Omkar Nagar Square, Nagpur-440027, Maharashtra"
+  },
+  "omkar nagar square": {
+    "canonical_name": "Omkar Nagar Square",
+    "distinctive_name": "omkar",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440027",
+    "full_source_address": "Plot No 1, Laxmi Jewellers, Near Omkar Nagar Square, Omkar Nagar Besa Road, Omkar Nagar Square, Nagpur-440027, Maharashtra"
+  },
+  "azamshah layout": {
+    "canonical_name": "Azamshah Layout",
+    "distinctive_name": "azamshah",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440035",
+    "full_source_address": "Opposite Axis Bank, Azamshah Layout, Tiranga Square Road, Shiv Nagar, Nagpur-440035, Maharashtra"
+  },
+  "tiranga square road": {
+    "canonical_name": "Tiranga Square Road",
+    "distinctive_name": "tiranga",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440035",
+    "full_source_address": "Opposite Axis Bank, Azamshah Layout, Tiranga Square Road, Shiv Nagar, Nagpur-440035, Maharashtra"
+  },
+  "shiv nagar": {
+    "canonical_name": "Shiv Nagar",
+    "distinctive_name": "shiv",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440035",
+    "full_source_address": "Opposite Axis Bank, Azamshah Layout, Tiranga Square Road, Shiv Nagar, Nagpur-440035, Maharashtra"
+  },
+  "drd tower": {
+    "canonical_name": "Drd Tower",
+    "distinctive_name": "drd",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680005",
+    "full_source_address": "Drd Tower, Puthenpally, East Fort, Thrissur-680005, Kerala"
+  },
+  "adarsh tower": {
+    "canonical_name": "Adarsh Tower",
+    "distinctive_name": "adarsh",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680004",
+    "full_source_address": "Adarsh Tower, Near Max Showroom, Kalvari Road, West Fort Jn, West Fort, Thrissur-680004, Kerala"
+  },
+  "kalvari road": {
+    "canonical_name": "Kalvari Road",
+    "distinctive_name": "kalvari",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680004",
+    "full_source_address": "Adarsh Tower, Near Max Showroom, Kalvari Road, West Fort Jn, West Fort, Thrissur-680004, Kerala"
+  },
+  "kallinhapuram complex": {
+    "canonical_name": "Kallinhapuram Complex",
+    "distinctive_name": "kallinhapuram",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680121",
+    "full_source_address": "Kallinhapuram Complex, Althara, Nada, Irinjalakuda, Thrissur-680121, Kerala"
+  },
+  "guruvayur road": {
+    "canonical_name": "Guruvayur Road",
+    "distinctive_name": "guruvayur",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680002",
+    "full_source_address": "Door No. Xv/8823 to 26, Angel Planet Biulding, Puzhakkal, Punkunnam, Guruvayur Road, Punkunnu, Thrissur-680002, Kerala"
+  },
+  "mo road": {
+    "canonical_name": "MO Road",
+    "distinctive_name": "mo",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680001",
+    "full_source_address": "No.111, MO Road, Nehru Bazar, Thrissur-680001, Kerala"
+  },
+  "nehru bazar": {
+    "canonical_name": "Nehru Bazar",
+    "distinctive_name": "nehru",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680001",
+    "full_source_address": "No.111, MO Road, Nehru Bazar, Thrissur-680001, Kerala"
+  },
+  "palace road": {
+    "canonical_name": "Palace Road",
+    "distinctive_name": "palace",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680005",
+    "full_source_address": "Chungath Palace, Palace Road, Chembukkav, Thrissur-680005, Kerala"
+  },
+  "fathima nagar": {
+    "canonical_name": "Fathima Nagar",
+    "distinctive_name": "fathima",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680005",
+    "full_source_address": "Fathima Nagar, Anchery, Kerala, Mission Quarters Road, Thrissur East, Thrissur-680005, Kerala"
+  },
+  "mission quarters road": {
+    "canonical_name": "Mission Quarters Road",
+    "distinctive_name": "mission quarters",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680005",
+    "full_source_address": "Fathima Nagar, Anchery, Kerala, Mission Quarters Road, Thrissur East, Thrissur-680005, Kerala"
+  },
+  "nc road": {
+    "canonical_name": "NC Road",
+    "distinctive_name": "nc",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680001",
+    "full_source_address": "Church Circle, Near to New Church, Koppen Lane, Erinjery Angady, NC Road, Thrissur-680001, Kerala"
+  },
+  "davis tower": {
+    "canonical_name": "Davis Tower",
+    "distinctive_name": "davis",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680001",
+    "full_source_address": "No10/649/2 Davis Tower, Near Children Centre, Pallikkulam Road, Thrissur Central, Thrissur-680001, Kerala"
+  },
+  "pallikkulam road": {
+    "canonical_name": "Pallikkulam Road",
+    "distinctive_name": "pallikkulam",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680001",
+    "full_source_address": "No10/649/2 Davis Tower, Near Children Centre, Pallikkulam Road, Thrissur Central, Thrissur-680001, Kerala"
+  },
+  "essjay tower": {
+    "canonical_name": "Essjay Tower",
+    "distinctive_name": "essjay",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680001",
+    "full_source_address": "Essjay Tower, Latin Church Road, Thrissur Central, Thrissur-680001, Kerala"
+  },
+  "latin church road": {
+    "canonical_name": "Latin Church Road",
+    "distinctive_name": "latin",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680001",
+    "full_source_address": "Essjay Tower, Latin Church Road, Thrissur Central, Thrissur-680001, Kerala"
+  },
+  "star nagar": {
+    "canonical_name": "Star Nagar",
+    "distinctive_name": "star",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680664",
+    "full_source_address": "Star Nagar, Municipal Bus Stand, Kodungallur, Thrissur-680664, Kerala"
+  },
+  "bishop alapatt road": {
+    "canonical_name": "Bishop Alapatt Road",
+    "distinctive_name": "bishop alapatt",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680005",
+    "full_source_address": "Fathima Nagar, Bishop Alapatt Road, East Fort, Thrissur-680005, Kerala"
+  },
+  "pazhayannur road": {
+    "canonical_name": "Pazhayannur road",
+    "distinctive_name": "pazhayannur",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680586",
+    "full_source_address": "Opp Little Flower Convent, Pazhayannur road, Chelakkara, Thrissur-680586, Kerala"
+  },
+  "kuttanellur road": {
+    "canonical_name": "Kuttanellur Road",
+    "distinctive_name": "kuttanellur",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680005",
+    "full_source_address": "Jewelima, Near Mar Aprem Church, Kuttanellur Road, Thrissur East, Thrissur-680005, Kerala"
+  },
+  "emirates tower building": {
+    "canonical_name": "Emirates Tower Building",
+    "distinctive_name": "emirates",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680506",
+    "full_source_address": "Emirates Tower Building, Near Chavakkad Private Bus Stand, Enamavu Road, Chavakkad, Thrissur-680506, Kerala"
+  },
+  "enamavu road": {
+    "canonical_name": "Enamavu Road",
+    "distinctive_name": "enamavu",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pincode": "680506",
+    "full_source_address": "Emirates Tower Building, Near Chavakkad Private Bus Stand, Enamavu Road, Chavakkad, Thrissur-680506, Kerala"
+  },
+  "ghansi bazaar": {
+    "canonical_name": "Ghansi Bazaar",
+    "distinctive_name": "ghansi",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500002",
+    "full_source_address": "1916788, Ghansi Bazaar, Opposite Hotel, Near Charminar, Charminar, Hyderabad-500002, Telangana"
+  },
+  "ganesh nagar": {
+    "canonical_name": "Ganesh Nagar",
+    "distinctive_name": "ganesh",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500077",
+    "full_source_address": "8138/14/B, Ganesh Nagar, Telangana Ngos Colony, Beside Bjp Office, Katedhan, Kattedan Industrial Estate, Hyderabad-500077, Telangana"
+  },
+  "telangana ngos colony": {
+    "canonical_name": "Telangana Ngos Colony",
+    "distinctive_name": "telangana ngos",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500077",
+    "full_source_address": "8138/14/B, Ganesh Nagar, Telangana Ngos Colony, Beside Bjp Office, Katedhan, Kattedan Industrial Estate, Hyderabad-500077, Telangana"
+  },
+  "housing board colony": {
+    "canonical_name": "Housing Board Colony",
+    "distinctive_name": "board",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500085",
+    "full_source_address": "Housing Board Colony, Kukatpally, 13th Phase Road, Venkata Ramana Colony, Hyderabad-500085, Telangana"
+  },
+  "13th phase road": {
+    "canonical_name": "13th Phase Road",
+    "distinctive_name": "13th",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500085",
+    "full_source_address": "Housing Board Colony, Kukatpally, 13th Phase Road, Venkata Ramana Colony, Hyderabad-500085, Telangana"
+  },
+  "venkata ramana colony": {
+    "canonical_name": "Venkata Ramana Colony",
+    "distinctive_name": "venkata ramana",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500085",
+    "full_source_address": "Housing Board Colony, Kukatpally, 13th Phase Road, Venkata Ramana Colony, Hyderabad-500085, Telangana"
+  },
+  "adarsh nagar colony": {
+    "canonical_name": "Adarsh Nagar Colony",
+    "distinctive_name": "adarsh",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500068",
+    "full_source_address": "14/A, No 4, Nagole, Adarsh Nagar Colony, Hyderabad-500068, Telangana"
+  },
+  "bada bazaar road golconda": {
+    "canonical_name": "Bada Bazaar Road Golconda",
+    "distinctive_name": "bada golconda",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500008",
+    "full_source_address": "Shop No 8-3-256, BadaBazar, Near Noor Medical Hall, Bada Bazaar Road Golconda, Golconda, Hyderabad-500008, Telangana"
+  },
+  "mla colony": {
+    "canonical_name": "Mla Colony",
+    "distinctive_name": "mla",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500033",
+    "full_source_address": "Sai Swapna Residence, No. 4, Mla Colony, Near Appolo Hospital, Film Nagar, Navanirman Nagar-Jubilee Hills, Hyderabad-500033, Telangana"
+  },
+  "film nagar": {
+    "canonical_name": "Film Nagar",
+    "distinctive_name": "film",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500033",
+    "full_source_address": "Sai Swapna Residence, No. 4, Mla Colony, Near Appolo Hospital, Film Nagar, Navanirman Nagar-Jubilee Hills, Hyderabad-500033, Telangana"
+  },
+  "navanirman nagar-jubilee hills": {
+    "canonical_name": "Navanirman Nagar-Jubilee Hills",
+    "distinctive_name": "navanirman nagar-jubilee",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500033",
+    "full_source_address": "Sai Swapna Residence, No. 4, Mla Colony, Near Appolo Hospital, Film Nagar, Navanirman Nagar-Jubilee Hills, Hyderabad-500033, Telangana"
+  },
+  "aliabad road": {
+    "canonical_name": "Aliabad Road",
+    "distinctive_name": "aliabad",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500065",
+    "full_source_address": "No 20, 4-136/1, Ground & First Floor, Grace Plaza, Charminar, Shalibanda, Aliabad Road, Shah Ali Banda, Hyderabad-500065, Telangana"
+  },
+  "sri ram nagar colony": {
+    "canonical_name": "Sri Ram Nagar Colony",
+    "distinctive_name": "sri ram",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500050",
+    "full_source_address": "Plot No:97, SyNo: 305 to 309/B, Beside Tata Motors, Sri Ram Nagar Colony, Chanda Nagar, Hyderabad-500050, Telangana"
+  },
+  "chanda nagar": {
+    "canonical_name": "Chanda Nagar",
+    "distinctive_name": "chanda",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500050",
+    "full_source_address": "Plot No:97, SyNo: 305 to 309/B, Beside Tata Motors, Sri Ram Nagar Colony, Chanda Nagar, Hyderabad-500050, Telangana"
+  },
+  "ameerpet main road": {
+    "canonical_name": "Ameerpet Main Road",
+    "distinctive_name": "ameerpet",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500016",
+    "full_source_address": "8-3-949/1/B, Kamma Sangham Building, Metro Pillar A1077 & Beside Sitara Hotel, Ameerpet Main Road, Ameerpet, Hyderabad-500016, Telangana"
+  },
+  "vinay nagar": {
+    "canonical_name": "Vinay Nagar",
+    "distinctive_name": "vinay",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500059",
+    "full_source_address": "Saroornagar, Vinay Nagar, Saroor Nagar West, Saidabad, Hyderabad-500059, Telangana"
+  },
+  "saroor nagar west": {
+    "canonical_name": "Saroor Nagar West",
+    "distinctive_name": "saroor west",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500059",
+    "full_source_address": "Saroornagar, Vinay Nagar, Saroor Nagar West, Saidabad, Hyderabad-500059, Telangana"
+  },
+  "akbar road": {
+    "canonical_name": "Akbar Road",
+    "distinctive_name": "akbar",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500065",
+    "full_source_address": "23-3-241, Akbar Road, Sultan Shahi, Hyderabad-500065, Telangana"
+  },
+  "patel nagar": {
+    "canonical_name": "Patel Nagar",
+    "distinctive_name": "patel",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500018",
+    "full_source_address": "House No 12-547/1/12, Patel Nagar, Cross Road, Moosapet, Hyderabad-500018, Telangana"
+  },
+  "singhania tower": {
+    "canonical_name": "Singhania Tower",
+    "distinctive_name": "singhania",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500082",
+    "full_source_address": "Door No 6-3-883/6/B, Singhania Tower, Ground Floor, Beside Reliance, Greenlands Road, Punjagutta, Hyderabad-500082, Telangana"
+  },
+  "greenlands road": {
+    "canonical_name": "Greenlands Road",
+    "distinctive_name": "greenlands",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500082",
+    "full_source_address": "Door No 6-3-883/6/B, Singhania Tower, Ground Floor, Beside Reliance, Greenlands Road, Punjagutta, Hyderabad-500082, Telangana"
+  },
+  "vivekanandanagar main road": {
+    "canonical_name": "Vivekanandanagar Main Road",
+    "distinctive_name": "vivekanandanagar",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500072",
+    "full_source_address": "No 3-5-25/5, Metro Pillar No 775, Vivekanandanagar Main Road, Kukatpally, Hyderabad-500072, Telangana"
+  },
+  "krishna nagar": {
+    "canonical_name": "Krishna Nagar",
+    "distinctive_name": "krishna",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500060",
+    "full_source_address": "Millenium Residency, Pakala Plaza, Opposite Malabar Gold & Metro Pillar No 1555, Krishna Nagar, Chaithanyapuri, Dilsukh Nagar Main Road, Dilsukh Nagar, Hyderabad-500060, Telangana"
+  },
+  "dilsukh nagar main road": {
+    "canonical_name": "Dilsukh Nagar Main Road",
+    "distinctive_name": "dilsukh",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500060",
+    "full_source_address": "Millenium Residency, Pakala Plaza, Opposite Malabar Gold & Metro Pillar No 1555, Krishna Nagar, Chaithanyapuri, Dilsukh Nagar Main Road, Dilsukh Nagar, Hyderabad-500060, Telangana"
+  },
+  "dilsukh nagar": {
+    "canonical_name": "Dilsukh Nagar",
+    "distinctive_name": "dilsukh",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500060",
+    "full_source_address": "Millenium Residency, Pakala Plaza, Opposite Malabar Gold & Metro Pillar No 1555, Krishna Nagar, Chaithanyapuri, Dilsukh Nagar Main Road, Dilsukh Nagar, Hyderabad-500060, Telangana"
+  },
+  "somi reddy nagar": {
+    "canonical_name": "Somi Reddy Nagar",
+    "distinctive_name": "somi reddy",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500048",
+    "full_source_address": "Shop No 1 & 2, House No 4-3-144/2, Near Pillar No 122, Somi Reddy Nagar, Attapur, Hyderabad-500048, Telangana"
+  },
+  "sabza colony": {
+    "canonical_name": "Sabza Colony",
+    "distinctive_name": "sabza",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500008",
+    "full_source_address": "G4, Liberty Plaza, M.No. 81346/1, Amb, Sabza Colony, Hyderabad-500008, Telangana"
+  },
+  "bhagya nagar colony": {
+    "canonical_name": "Bhagya Nagar Colony",
+    "distinctive_name": "bhagya",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500072",
+    "full_source_address": "Plot No 3, Shop No 2-22-300, Near Arjun Theatre, Bhagya Nagar Colony, National Highway 9, Kukatpally Main Road, Kukatpally, Hyderabad-500072, Telangana"
+  },
+  "kukatpally main road": {
+    "canonical_name": "Kukatpally Main Road",
+    "distinctive_name": "kukatpally",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500072",
+    "full_source_address": "Plot No 3, Shop No 2-22-300, Near Arjun Theatre, Bhagya Nagar Colony, National Highway 9, Kukatpally Main Road, Kukatpally, Hyderabad-500072, Telangana"
+  },
+  "sri sai nagar": {
+    "canonical_name": "Sri Sai Nagar",
+    "distinctive_name": "sri sai",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500081",
+    "full_source_address": "Bawarchi Restaurant, Number 48, Megha Hills, Sri Sai Nagar, Opposite Madhapur, Madhapur, Hyderabad-500081, Telangana"
+  },
+  "e block 202": {
+    "canonical_name": "E Block 202",
+    "distinctive_name": "e 202",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500050",
+    "full_source_address": "E Block 202, Sai Raghava Enclave, Kailash Nagar, Chanda Nagar, Hyderabad-500050, Telangana"
+  },
+  "sai raghava enclave": {
+    "canonical_name": "Sai Raghava Enclave",
+    "distinctive_name": "sai raghava",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500050",
+    "full_source_address": "E Block 202, Sai Raghava Enclave, Kailash Nagar, Chanda Nagar, Hyderabad-500050, Telangana"
+  },
+  "kailash nagar": {
+    "canonical_name": "Kailash Nagar",
+    "distinctive_name": "kailash",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500050",
+    "full_source_address": "E Block 202, Sai Raghava Enclave, Kailash Nagar, Chanda Nagar, Hyderabad-500050, Telangana"
+  },
+  "laad bazar": {
+    "canonical_name": "Laad Bazar",
+    "distinctive_name": "laad",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "202326",
+    "full_source_address": "202326, Laad Bazar, Ghansi Bazaar, Char Kaman, Hyderabad-500002, Telangana"
+  },
+  "okaz complex": {
+    "canonical_name": "Okaz Complex",
+    "distinctive_name": "okaz",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500028",
+    "full_source_address": "Shop No 16, Okaz Complex, Opp Himalaya Book World, Gudi Malkapur Road, Royal Colony, Humayun Nagar, Mehdipatnam, Hyderabad-500028, Telangana"
+  },
+  "gudi malkapur road": {
+    "canonical_name": "Gudi Malkapur Road",
+    "distinctive_name": "gudi malkapur",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500028",
+    "full_source_address": "Shop No 16, Okaz Complex, Opp Himalaya Book World, Gudi Malkapur Road, Royal Colony, Humayun Nagar, Mehdipatnam, Hyderabad-500028, Telangana"
+  },
+  "royal colony": {
+    "canonical_name": "Royal Colony",
+    "distinctive_name": "royal",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500028",
+    "full_source_address": "Shop No 16, Okaz Complex, Opp Himalaya Book World, Gudi Malkapur Road, Royal Colony, Humayun Nagar, Mehdipatnam, Hyderabad-500028, Telangana"
+  },
+  "humayun nagar": {
+    "canonical_name": "Humayun Nagar",
+    "distinctive_name": "humayun",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500028",
+    "full_source_address": "Shop No 16, Okaz Complex, Opp Himalaya Book World, Gudi Malkapur Road, Royal Colony, Humayun Nagar, Mehdipatnam, Hyderabad-500028, Telangana"
+  },
+  "tamiz arcade": {
+    "canonical_name": "Tamiz Arcade",
+    "distinctive_name": "tamiz",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781007",
+    "full_source_address": "Tamiz Arcade, Near Prag News Building, G S Road, Ulubari, Guwahati-781007, Assam"
+  },
+  "g s road": {
+    "canonical_name": "G S Road",
+    "distinctive_name": "g s",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781007",
+    "full_source_address": "Tamiz Arcade, Near Prag News Building, G S Road, Ulubari, Guwahati-781007, Assam"
+  },
+  "rg baruah road": {
+    "canonical_name": "Rg Baruah Road",
+    "distinctive_name": "rg baruah",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781024",
+    "full_source_address": "Archneh Jewellers Building, Opposite Blue Dart, Rg Baruah Road, Zoo Road, Guwahati-781024, Assam"
+  },
+  "zoo road": {
+    "canonical_name": "Zoo Road",
+    "distinctive_name": "zoo",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781024",
+    "full_source_address": "Archneh Jewellers Building, Opposite Blue Dart, Rg Baruah Road, Zoo Road, Guwahati-781024, Assam"
+  },
+  "ganpati enclave": {
+    "canonical_name": "Ganpati Enclave",
+    "distinctive_name": "ganpati",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781007",
+    "full_source_address": "Ganpati Enclave, Ground Floor, G S Road, Guwahati-781007, Assam"
+  },
+  "red cross road": {
+    "canonical_name": "Red Cross Road",
+    "distinctive_name": "red",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781003",
+    "full_source_address": "Opposite Sbi Atm & Indian Bank, Opposite Red Cross Road, Chandmari Bus Stop, GNB Road, Chandmari, Guwahati-781003, Assam"
+  },
+  "gnb road": {
+    "canonical_name": "GNB Road",
+    "distinctive_name": "gnb",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781003",
+    "full_source_address": "Opposite Sbi Atm & Indian Bank, Opposite Red Cross Road, Chandmari Bus Stop, GNB Road, Chandmari, Guwahati-781003, Assam"
+  },
+  "nafiza commercial complex": {
+    "canonical_name": "Nafiza Commercial Complex",
+    "distinctive_name": "nafiza",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781016",
+    "full_source_address": "Shop No. 6, Nafiza Commercial Complex, Opp Arya Vidyapeeth College, AK Aazad Road, Gopinathnagar, Guwahati-781016, Assam"
+  },
+  "ak aazad road": {
+    "canonical_name": "AK Aazad Road",
+    "distinctive_name": "ak aazad",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781016",
+    "full_source_address": "Shop No. 6, Nafiza Commercial Complex, Opp Arya Vidyapeeth College, AK Aazad Road, Gopinathnagar, Guwahati-781016, Assam"
+  },
+  "assam trunk road": {
+    "canonical_name": "Assam Trunk Road",
+    "distinctive_name": "assam trunk",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781014",
+    "full_source_address": "No 002, Ground Floor, NCS Square Mall, Near Adabari Bus Stand, Assam Trunk Road, Shahida Market, Guwahati-781014, Assam"
+  },
+  "shahida market": {
+    "canonical_name": "Shahida Market",
+    "distinctive_name": "shahida",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781014",
+    "full_source_address": "No 002, Ground Floor, NCS Square Mall, Near Adabari Bus Stand, Assam Trunk Road, Shahida Market, Guwahati-781014, Assam"
+  },
+  "orion tower": {
+    "canonical_name": "Orion Tower",
+    "distinctive_name": "orion",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781005",
+    "full_source_address": "Orion Tower, Gf, Christian Basti, Gs Road, Bhajanka Market, Guwahati-781005, Assam"
+  },
+  "christian basti": {
+    "canonical_name": "Christian Basti Dispur",
+    "distinctive_name": "christian dispur",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781005"
+  },
+  "gs road": {
+    "canonical_name": "Gs Road",
+    "distinctive_name": "gs",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781005",
+    "full_source_address": "Orion Tower, Gf, Christian Basti, Gs Road, Bhajanka Market, Guwahati-781005, Assam"
+  },
+  "bhajanka market": {
+    "canonical_name": "Bhajanka Market",
+    "distinctive_name": "bhajanka",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781005",
+    "full_source_address": "Orion Tower, Gf, Christian Basti, Gs Road, Bhajanka Market, Guwahati-781005, Assam"
+  },
+  "h b road": {
+    "canonical_name": "H B Road",
+    "distinctive_name": "h b",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781001",
+    "full_source_address": "62/C, Masjid Gali, H B Road, Krishna Market, Guwahati-781001, Assam"
+  },
+  "krishna market": {
+    "canonical_name": "Krishna Market",
+    "distinctive_name": "krishna",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781001",
+    "full_source_address": "62/C, Masjid Gali, H B Road, Krishna Market, Guwahati-781001, Assam"
+  },
+  "sartaz complex": {
+    "canonical_name": "Sartaz Complex",
+    "distinctive_name": "sartaz",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781001",
+    "full_source_address": "Shop No 01, Sartaz Complex, Lakhtokia Kamrup Metro, Word No 10 Col. J. Ali Road, Lakhtokia, Guwahati-781001, Assam"
+  },
+  "word no 10 col. j. ali road": {
+    "canonical_name": "Word No 10 Col. J. Ali Road",
+    "distinctive_name": "word no 10 col. j. ali",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781001",
+    "full_source_address": "Shop No 01, Sartaz Complex, Lakhtokia Kamrup Metro, Word No 10 Col. J. Ali Road, Lakhtokia, Guwahati-781001, Assam"
+  },
+  "gk tower": {
+    "canonical_name": "GK Tower",
+    "distinctive_name": "gk",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781009",
+    "full_source_address": "Near Jajodia Engineering, GK Tower, A T Road, Bharalumukh, Guwahati-781009, Assam"
+  },
+  "a t road": {
+    "canonical_name": "A T Road",
+    "distinctive_name": "a t",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781009",
+    "full_source_address": "Near Jajodia Engineering, GK Tower, A T Road, Bharalumukh, Guwahati-781009, Assam"
+  },
+  "achyut choudhary complex": {
+    "canonical_name": "Achyut Choudhary Complex",
+    "distinctive_name": "achyut choudhary",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781005",
+    "full_source_address": "Ground & 1st Floor, Achyut Choudhary Complex, Opposite Indian Oil Petrol Pump, Opposite Hanuman Mandir, G S Road, Guwahati-781005, Assam"
+  },
+  "s c road": {
+    "canonical_name": "S C Road",
+    "distinctive_name": "s c",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781001",
+    "full_source_address": "No. 70, S C Road, Athgaon, Guwahati-781001, Assam"
+  },
+  "lachit nagar": {
+    "canonical_name": "Lachit Nagar",
+    "distinctive_name": "lachit",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781007",
+    "full_source_address": "Ground Floor, Roodraksh Mall, G8, Near Smart Bazaar, Assam Trunk Road, Lachit Nagar, Guwahati-781007, Assam"
+  },
+  "gate no.3": {
+    "canonical_name": "Gate No.3",
+    "distinctive_name": "gate no.3",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781001",
+    "full_source_address": "Bajaj Bhavan, Near Railway Gate No.3, Fancy Bazar, Tokobari Road, Fancy Bazar, Guwahati-781001, Assam"
+  },
+  "fancy bazar": {
+    "canonical_name": "Fancy Bazar",
+    "distinctive_name": "fancy",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781001"
+  },
+  "tokobari road": {
+    "canonical_name": "Tokobari Road",
+    "distinctive_name": "tokobari",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781001",
+    "full_source_address": "Bajaj Bhavan, Near Railway Gate No.3, Fancy Bazar, Tokobari Road, Fancy Bazar, Guwahati-781001, Assam"
+  },
+  "purnima commercial complex": {
+    "canonical_name": "Purnima Commercial Complex",
+    "distinctive_name": "purnima",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781005",
+    "full_source_address": "Ground Floor, Purnima Commercial Complex, Ananda Nagar, Christian Basti, G S Road, Guwahati-781005, Assam"
+  },
+  "ananda nagar": {
+    "canonical_name": "Ananda Nagar",
+    "distinctive_name": "ananda",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781005",
+    "full_source_address": "Ground Floor, Purnima Commercial Complex, Ananda Nagar, Christian Basti, G S Road, Guwahati-781005, Assam"
+  },
+  "binova nagar main road": {
+    "canonical_name": "Binova Nagar Main Road",
+    "distinctive_name": "binova",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781018",
+    "full_source_address": "Bharat Seva Asram / Vip Hotel, Binova Nagar Main Road, Binova Nagar, Guwahati-781018, Assam"
+  },
+  "binova nagar": {
+    "canonical_name": "Binova Nagar",
+    "distinctive_name": "binova",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781018",
+    "full_source_address": "Bharat Seva Asram / Vip Hotel, Binova Nagar Main Road, Binova Nagar, Guwahati-781018, Assam"
+  },
+  "pandav nagar": {
+    "canonical_name": "Pandav Nagar",
+    "distinctive_name": "pandav",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781012",
+    "full_source_address": "Near Adabari Post Office, Assam Trunk Road, Pandav Nagar, Guwahati-781012, Assam"
+  },
+  "k c road": {
+    "canonical_name": "K C Road",
+    "distinctive_name": "k c",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781001",
+    "full_source_address": "K C Road, Maliram Lohia Market, Guwahati-781001, Assam"
+  },
+  "maliram lohia market": {
+    "canonical_name": "Maliram Lohia Market",
+    "distinctive_name": "maliram lohia",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781001",
+    "full_source_address": "K C Road, Maliram Lohia Market, Guwahati-781001, Assam"
+  },
+  "bemllayout": {
+    "canonical_name": "BEML Layout",
+    "distinctive_name": "beml",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560098"
+  },
+  "beml leyout": {
+    "canonical_name": "BEML Layout",
+    "distinctive_name": "beml",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560098"
+  },
+  "beml layot": {
+    "canonical_name": "BEML Layout",
+    "distinctive_name": "beml",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560098"
+  },
+  "chandralayout": {
+    "canonical_name": "Chandra Layout",
+    "distinctive_name": "chandra",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560040"
+  },
+  "chandra leyout": {
+    "canonical_name": "Chandra Layout",
+    "distinctive_name": "chandra",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560040"
+  },
+  "chandra layot": {
+    "canonical_name": "Chandra Layout",
+    "distinctive_name": "chandra",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560040"
+  },
+  "jayanagar 1stblk": {
+    "canonical_name": "Jayanagar 1st Block",
+    "distinctive_name": "jayanagar 1st",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011"
+  },
+  "ashoka pillar": {
+    "canonical_name": "Jayanagar 1st Block",
+    "distinctive_name": "jayanagar 1st",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011"
+  },
+  "ashoka pillar jayanagar": {
+    "canonical_name": "Jayanagar 1st Block",
+    "distinctive_name": "jayanagar 1st",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560011"
+  },
+  "mahalakshmilayout": {
+    "canonical_name": "Mahalakshmi Layout",
+    "distinctive_name": "mahalakshmi",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560096"
+  },
+  "mahalakshmi leyout": {
+    "canonical_name": "Mahalakshmi Layout",
+    "distinctive_name": "mahalakshmi",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560096"
+  },
+  "shankar nagar mahalakshmi": {
+    "canonical_name": "Mahalakshmi Layout",
+    "distinctive_name": "mahalakshmi",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560096"
+  },
+  "ayyappanagar": {
+    "canonical_name": "Ayyappa Nagar",
+    "distinctive_name": "ayyappa",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560036"
+  },
+  "ayyappa nagarr": {
+    "canonical_name": "Ayyappa Nagar",
+    "distinctive_name": "ayyappa",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560036"
+  },
+  "sapthagiri healt care ayyappa": {
+    "canonical_name": "Ayyappa Nagar",
+    "distinctive_name": "ayyappa",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560036"
+  },
+  "rajamarket": {
+    "canonical_name": "Avenue Road Raja Market",
+    "distinctive_name": "avenue raja",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560002"
+  },
+  "raja mrkt": {
+    "canonical_name": "Avenue Road Raja Market",
+    "distinctive_name": "avenue raja",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560002"
+  },
+  "sampige rod": {
+    "canonical_name": "Sampige Road Malleswaram",
+    "distinctive_name": "sampige malleswaram",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560003"
+  },
+  "sampigeroad": {
+    "canonical_name": "Sampige Road Malleswaram",
+    "distinctive_name": "sampige malleswaram",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560003"
+  },
+  "doddaballapur bzr": {
+    "canonical_name": "Doddaballapur Bazaar",
+    "distinctive_name": "doddaballapur",
+    "city": "Bengaluru",
+    "district": "Bengaluru Rural",
+    "state": "Karnataka",
+    "pincode": "561203"
+  },
+  "doddaballapur old bus stand": {
+    "canonical_name": "Doddaballapur Bazaar",
+    "distinctive_name": "doddaballapur",
+    "city": "Bengaluru",
+    "district": "Bengaluru Rural",
+    "state": "Karnataka",
+    "pincode": "561203"
+  },
+  "scouts camp road doddaballapur": {
+    "canonical_name": "Doddaballapur Bazaar",
+    "distinctive_name": "doddaballapur",
+    "city": "Bengaluru",
+    "district": "Bengaluru Rural",
+    "state": "Karnataka",
+    "pincode": "561203"
+  },
+  "yelahanka new town": {
+    "canonical_name": "Yelahanka New Town",
+    "distinctive_name": "yelahanka new",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560064"
+  },
+  "yelahankanewtown": {
+    "canonical_name": "Yelahanka New Town",
+    "distinctive_name": "yelahanka new",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560064"
+  },
+  "khb 4th cross yelahanka": {
+    "canonical_name": "Yelahanka New Town",
+    "distinctive_name": "yelahanka new",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560064"
+  },
+  "christianbasti": {
+    "canonical_name": "Christian Basti Dispur",
+    "distinctive_name": "christian dispur",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781005"
+  },
+  "aditya plaza christian basti": {
+    "canonical_name": "Christian Basti Dispur",
+    "distinctive_name": "christian dispur",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781005"
+  },
+  "news live building christian basti": {
+    "canonical_name": "Christian Basti Dispur",
+    "distinctive_name": "christian dispur",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781005"
+  },
+  "fancybazar": {
+    "canonical_name": "Fancy Bazar",
+    "distinctive_name": "fancy",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781001"
+  },
+  "fancy bazaar": {
+    "canonical_name": "Fancy Bazar",
+    "distinctive_name": "fancy",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781001"
+  },
+  "sani mandir fancy bazar": {
+    "canonical_name": "Fancy Bazar",
+    "distinctive_name": "fancy",
+    "city": "Guwahati",
+    "district": "Kamrup",
+    "state": "Assam",
+    "pincode": "781001"
+  },
+  "ghat gate": {
+    "canonical_name": "Ghat Gate Agra Road",
+    "distinctive_name": "ghat gate agra",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302003"
+  },
+  "ghatgate": {
+    "canonical_name": "Ghat Gate Agra Road",
+    "distinctive_name": "ghat gate agra",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302003"
+  },
+  "ghat gate agra road": {
+    "canonical_name": "Ghat Gate Agra Road",
+    "distinctive_name": "ghat gate agra",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302003"
+  },
+  "johari bazar": {
+    "canonical_name": "Johari Bazar",
+    "distinctive_name": "johari",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302003"
+  },
+  "joharibazar": {
+    "canonical_name": "Johari Bazar",
+    "distinctive_name": "johari",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302003"
+  },
+  "johari bazaar": {
+    "canonical_name": "Johari Bazar",
+    "distinctive_name": "johari",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302003"
+  },
+  "badi chaupar": {
+    "canonical_name": "Badi Chaupar",
+    "distinctive_name": "badi chaupar",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302002"
+  },
+  "badichaupar": {
+    "canonical_name": "Badi Chaupar",
+    "distinctive_name": "badi chaupar",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302002"
+  },
+  "badi chopar": {
+    "canonical_name": "Badi Chaupar",
+    "distinctive_name": "badi chaupar",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302002"
+  },
+  "sitabuldi": {
+    "canonical_name": "Sitabuldi",
+    "distinctive_name": "sitabuldi",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440012"
+  },
+  "sitaburdi": {
+    "canonical_name": "Sitabuldi",
+    "distinctive_name": "sitabuldi",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440012"
+  },
+  "sitabuldi main road": {
+    "canonical_name": "Sitabuldi",
+    "distinctive_name": "sitabuldi",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440012"
+  },
+  "dharampeth": {
+    "canonical_name": "Dharampeth",
+    "distinctive_name": "dharampeth",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010"
+  },
+  "dharampet": {
+    "canonical_name": "Dharampeth",
+    "distinctive_name": "dharampeth",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010"
+  },
+  "west high court road dharampeth": {
+    "canonical_name": "Dharampeth",
+    "distinctive_name": "dharampeth",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010"
+  }
+}
