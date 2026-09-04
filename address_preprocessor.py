@@ -248,7 +248,23 @@ CHATTER_PATTERNS = [
     r'\b(gate\s+will\s+be\s+closed\s+after\s+\d+\s*(pm|am)?)\b',
     
     # 5. Order / E-commerce Metadata Noise
-    r'\b(cash\s+on\s+delivery|cod\s+order|fragile\s+handle\s+with\s+care|return\s+if\s+undelivered\s+to\s+[a-zA-Z\s]+(?=plot|house|flat|shop|gala)|urgent\s+medical\s+sample|awb\s*#?\s*\d+|order\s*#?\s*\d+|gstin\s*:\s*[a-zA-Z0-9]+)\b'
+    r'\b(cash\s+on\s+delivery|cod\s+order|fragile\s+handle\s+with\s+care|return\s+if\s+undelivered\s+to\s+[a-zA-Z\s]+(?=plot|house|flat|shop|gala)|urgent\s+medical\s+sample|awb\s*#?\s*\d+|order\s*#?\s*\d+|gstin\s*:\s*[a-zA-Z0-9]+)\b',
+
+    # 6. Conversational Kinship & Personal Relationship Frames (Structural Grammar)
+    r'\b(?:mere\s+|apne\s+)?(?:mama|mami|chacha|chachi|bua|fufa|tau|taiji|tauji|dada|dadi|nana|nani|bhaiya|bhai|didi|jiju|mausa|mausi|bhabhi|sasur|saas)\s*(?:ji|sahab|saab)?\s*(?:ke|ki|ka|k)?\s*(?:ghar|makan|kothi|dukan|dukaan|shop|khet|clinic|dairy|godown|factory|plot|flat|room|office|chakki|yahan|yaha)\s*(?:ke|ki|k|ka)?\s*(?:paas|p[aa]*ss?|samne|aage|peeche|piche|side(?:\s*me)?|bagal(?:\s*me)?|wali\s*gali|wale\s*raste|sath(?:\s*me)?|hi)?\b',
+    r'\b(?:mere\s+|apne\s+)?(?:mama|mami|chacha|chachi|bua|fufa|tau|taiji|tauji|dada|dadi|nana|nani|bhaiya|bhai|didi|jiju|mausa|mausi|bhabhi)\s*(?:ji|sahab|saab)?\s*(?:ke|ki|ka|k)\s*(?:paas|p[aa]*ss?|samne|aage|peeche|piche|side(?:\s*me)?|bagal(?:\s*me)?|yahan|yaha)\b',
+
+    # 7. Local Social & Professional Title Frames
+    r'\b(?:doctor|dr|pandit|master|pradhan|sarpanch|seth|vakil|sharma|verma|gupta|singh)\s*(?:ji|sahab|saab)?\s*(?:ke|ki|ka|k)?\s*(?:ghar|makan|kothi|dukan|dukaan|shop|khet|clinic|dairy|office|chakki)\s*(?:ke|ki|k|ka)?\s*(?:paas|samne|aage|peeche|piche|side(?:\s*me)?|bagal(?:\s*me)?|wali\s*gali)?\b',
+
+    # 8. Colloquial Indian Speech Fillers & Directional Imperatives
+    r'\b(?:arre\s+)?wahi\s*(?:pe|par)?\s*(?:hai)?\b',
+    r'\b(?:arre\s+)?(?:bhai|bhaiya)\s+(?:dekh\s*lena|aa\s*jana)\b',
+    r'\b(?:side\s*me\s+|aage\s+)?aa\s*jana\b',
+    r'\b(?:pahuch\s*ke|pahunch\s*kar)?\s*(?:call|phone)\s*(?:karna|karein|kar\s*lena)\b',
+    r'\b(?:jo\s+)?(?:shop|dukan|makan|ghar)\s*hai\b',
+    r'\bcross\s*karte\s*hi\b',
+    r'\bcircle\s*ke\s*paas\s*jo\b'
 ]
 
 COMBINED_CHATTER_REGEX = re.compile('|'.join(f'({p})' for p in CHATTER_PATTERNS), re.IGNORECASE)
@@ -275,6 +291,8 @@ def extract_and_strip_chatter(raw_text: str):
     cleaned = re.sub(r'\s*,\s*', ', ', cleaned)
     cleaned = re.sub(r'(,\s*)+', ', ', cleaned)
     cleaned = re.sub(r'^[,\s\-\/]+|[,\s\-\/]+$', '', cleaned)
+    # Strip orphaned leading prepositions if left with no target
+    cleaned = re.sub(r'^(?:near|opposite|behind|beside|in front of|towards)\s*[,;\s]+', '', cleaned, flags=re.IGNORECASE)
     cleaned = " ".join(cleaned.split())
     return cleaned, extracted_instructions
 
@@ -447,8 +465,12 @@ def preprocess_address(raw: str) -> str:
     # (e) Expanded Block/wing/phonetic keyword de-fusion
     # Includes standard and common phonetic variations of house, street, landmark, and number words
     KEYWORD_DEFUSION_PATTERN = r'(block|blak|wing|tower|flat|phlat|room|rum|house|hawus|haus|plot|pilet|pelot|shop|sop|hno|cottage|kotej|chawl|cawl|number|nuber|sector|secter|road|rod|colony|colny|society|sosaiti|sosayti|station|stasan|school|scul|building|bilding|near|ner|nner|behind|bhind|opposite|samne|apartment|apartments|apts|apt)'
-    s = re.sub(KEYWORD_DEFUSION_PATTERN + r'(?=[a-zA-Z0-9])', r'\1 ', s, flags=re.IGNORECASE)
-    s = re.sub(r'(?<=[a-zA-Z0-9])' + KEYWORD_DEFUSION_PATTERN, r' \1', s, flags=re.IGNORECASE)
+    # Split keyword fused with digits (e.g. flat302 -> flat 302, sector4 -> sector 4)
+    s = re.sub(rf'\b{KEYWORD_DEFUSION_PATTERN}(?=\d)', r'\1 ', s, flags=re.IGNORECASE)
+    s = re.sub(rf'(?<=\d){KEYWORD_DEFUSION_PATTERN}\b', r' \1', s, flags=re.IGNORECASE)
+    # Split single-letter wing/block followed or preceded by keyword (e.g. blockA -> block A, bwing -> b wing)
+    s = re.sub(rf'\b{KEYWORD_DEFUSION_PATTERN}([a-zA-Z])\b', r'\1 \2', s, flags=re.IGNORECASE)
+    s = re.sub(rf'\b([a-zA-Z]){KEYWORD_DEFUSION_PATTERN}\b', r'\1 \2', s, flags=re.IGNORECASE)
 
     # Pre-clean Opp. and variations to remove trailing periods
     s = re.sub(r'\bopp\.\b|\bopp\b', 'opposite', s, flags=re.IGNORECASE)
